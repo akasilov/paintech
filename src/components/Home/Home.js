@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../assets/stylesheets/application.scss'
-import Header from './Header'
+import Header from '../Shared/Header'
 import HowItWords from './HowItWorks'
 import SuperEasy from './SuperEasy'
 import BestPrice from './BestPrice'
 import BestService from './BestService'
-import Footer from './Footer'
+import Footer from '../Shared/Footer'
 import ChatBtn from './ChatBtn'
 import drop17 from '../../assets/images/drop-17@1x.png'
 

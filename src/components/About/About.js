@@ -1,6 +1,6 @@
 import React from "react";
-import Header from '../Home/Header'
-import Footer from '../Home/Footer'
+import Header from '../Shared/Header'
+import Footer from '../Shared/Footer'
 import ChatBtn from '../Home/ChatBtn'
 import "../../assets/stylesheets/application.scss"
 
@@ -13,8 +13,6 @@ function importAll(r) {
 
 function About() {
     const images = importAll(require.context('../../assets/images/', false, /\.(png|jpe?g)$/));
-
-    console.log(images)
   
     return (
       <div className="body">

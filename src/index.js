@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';	
 import './fonts/RobotoSlab-Light.ttf'
 import './fonts/Montserrat-Regular.ttf'
+import './fonts/HKGrotesk-Regular.ttf'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -6,6 +6,10 @@
   font-family: 'Montserrat';
   src: local('Montserrat'), url(./fonts/Montserrat-Regular.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'HKGroteskRegular';
+  src: local('HKGroteskRegular'), url(./fonts/HKGrotesk-Regular.ttf) format('truetype');
+}
 
 
 body {
