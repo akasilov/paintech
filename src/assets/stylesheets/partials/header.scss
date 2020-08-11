@@ -41,6 +41,7 @@
     position: absolute;
     top: 160px;
     left: 7vw;
+    cursor: pointer;;
 
     &:hover{
       .lg-btn{
@@ -63,10 +64,8 @@
       margin-right: 10px;
       text-align: center;
       border: 1px solid #ddd;
-      a {
-        color: $language-picker-color ;
-        text-decoration: none;
-      }
+      color: $language-picker-color ;
+      text-decoration: none;
     }
 
     .active {
@@ -74,9 +73,7 @@
       box-shadow: 0 0 10px 4px rgba(0, 0, 0, .3) !important;
       z-index: 1;
       border: none !important;
-      a{
-        color:$white;
-      }
+      color:$white;
     }
 
 

@@ -10,9 +10,9 @@ function importAll(r) {
     return images;
 }
 
-function Gallery() {
+function Gallery(props) {
     const images = importAll(require.context('../../assets/images/', false, /\.(png|jpe?g)$/));
-  
+    const { t } = props;
     return (
       <div className="body">
         <ChatBtn />
@@ -137,7 +137,7 @@ function Gallery() {
               />
             </div>
             <div className="title">
-              <p className="title-gal">Gallery</p>
+              <p className="title-gal">{t('home_page.hero.nav_menu.gallery')}</p>
               <img
                 alt=""
                 src={images["brush-4@1x.png"]}

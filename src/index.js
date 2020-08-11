@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -7,11 +7,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './fonts/RobotoSlab-Light.ttf'
 import './fonts/Montserrat-Regular.ttf'
 import './fonts/HKGrotesk-Regular.ttf'
+import './i18n';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Suspense fallback={(<div>Loading</div>)}>
+    <App useSuspense={true} />
+  </Suspense>,
   document.getElementById('root')
 );
 

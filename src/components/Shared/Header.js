@@ -1,13 +1,21 @@
-import React from 'react';
+import React,{useState} from 'react';
 import SvgLogo from '../../assets/images/Logo'
 import '../../assets/stylesheets/application.scss'
 import {
     Link
 } from "react-router-dom";
-
+import { useTranslation} from 'react-i18next';
 
 
 function Header(props){
+
+    //const [lang,langChange] = useState(langChange('en'))
+
+    const {i18n } = useTranslation();
+    const changeLanguage = lng => {
+        i18n.changeLanguage(lng);
+
+    };
 
     return (
         <div id="header" className={`clearfix ${props.route==="home"?"home-header":""}`}>
@@ -16,9 +24,9 @@ function Header(props){
             </div>
             <div>
             <div id="lg-group" className="no-media">
-                <div className={`lg-btn active`}><a href='/'> En</a></div>
-                <div className="lg-btn"><a href='/'> Fr</a></div>
-                <div className="lg-btn"><a href='/'> De</a></div>
+                <div className={`lg-btn ${i18n.language==='en'?'active':""}`}><div onClick={() => changeLanguage('en')}>En</div></div>
+                <div className={`lg-btn ${i18n.language==='fr'?'active':""}`}><div  onClick={() => changeLanguage('fr')}> Fr</div></div>
+                <div className={`lg-btn ${i18n.language==='de'?'active':""}`}><div onClick={() => changeLanguage('de')}>De</div></div>
             </div>
             </div>
             <ul className="nav-menu">

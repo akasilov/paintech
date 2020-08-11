@@ -1,0 +1,198 @@
+{
+    "locales": {
+      "en": "En",
+      "de": "De",
+      "fr": "Fr"
+    },
+    "slogan": "Pimp your walls!",
+    "home_page": {
+      "start_painting": "Demander une offre",
+      "hero": {
+        "slogan": "Pimp your walls!",
+        "lang": "Fr",
+        "nav_menu": {
+          "the_concept": "Le concept",
+          "gallery": "Gallerie",
+          "prices": "Tarifs"
+        }
+      },
+      "how_it_works": {
+        "title": "Comment ça marche",
+        "step": "Etape",
+        "step_1": "Vous nous envoyez l'image que vous souhaitez nous faire peindre.",
+        "step_2": "Une fois le paiement effectué, nos artistes débutent le travail.",
+        "step_3": "Une fois le tableau terminé, nous vous envoyons une photo par email pour nous assurer que vous êtes satisfait.",
+        "step_4": "Le tableau est encadré dans un cadre en bois et emballé pour le transport.",
+        "step_5": "Le tableau est envoyé directement à votre adresse de livraison."
+      },
+      "super_easy": {
+        "title": "Super Simple!",
+        "description": "Il vous suffit de nous envoyer une image à reproduire en peinture à l'huile ou choisir une image dans notre gallerie."
+      },
+      "best_price": {
+        "title": "Super prix!",
+        "description": "Si vous trouvez un prix moins cher sur le net Suisse, nous nous alignons avec un rabais supplémentaire de 5%."
+      },
+      "best_service": {
+        "title": "Top service!",
+        "description": "Nos artistes plein de talents pourront modifier la peinture jusqu'à votre entière satisfaction."
+      },
+      "footer": {
+        "nav_menu": {
+          "about": "Notre équipe",
+          "sales_conditions": "Conditions de vente"
+        }
+      }
+    },
+    "feedbacks": {
+      "msg": {
+        "title": {
+          "name": "info@painted.ch"
+        },
+        "body": "Bonjour, n'hésitez pas à nous contacter si vous avez une question!",
+        "thank_you": "Merci pour votre commentaire"
+      },
+      "form": {
+        "e_mail_label": "Votre Email",
+        "comments_label": "Votre commentaire",
+        "send": "Envoyer"
+      }
+    },
+    "about": {
+      "title": "Notre équipe",
+      "description": {
+        "title": "Hello",
+        "body": {
+          "part_1": "Nous sommes une startup basée à Berne en Suisse qui a pour but de rendre l'Art abordable et accessible à tous. Avec Painted.ch, vous pouvez désormais commander une peinture à l'huile peinte à la main qui vous sera livrée encadrée directement chez vous en moins de quatre semaines.  Vous apporterez ainsi une touche unique à votre décoration d'intérieur!",
+          "part_2": "Grâce à notre réseau d'artistes basés partout dans le monde, nous nous assurons que l'image que vous voulez nous faire peindre réponde à toutes vos exigences.",
+          "number": "Numéros de téléphone"
+        }
+      }
+    },
+    "terms_conditions": {
+      "title": "Conditions Générales de Vente",
+      "part_1": {
+        "title": "1. Conditions générales",
+        "body": "Painted.ch est propriétaire et administrateur du présent site web. L’accès à ce site implique que vous acceptiez les limitations, conditions, remarques et réserves contenues dans cette page et en d’autres endroits du site (les \"Conditions générales\"). Painted.ch se réserve le droit de modifier à tout moment le contenu du site web."
+      },
+      "part_2": {
+        "title": "2. Informations sur les produits",
+        "body_1": "2-a: Painted.ch présente sur son site web les produits à vendre avec les caractéristiques nécessaires qui prévoient la possibilité pour le consommateur potentiel de connaître, avant la prise de commande définitive, les caractéristiques essentielles des produits qu'il souhaite acheter. Tous nos produits sont décrits avec la plus grande précision possible, les photos ont pour but de présenter une vue d’ensemble du produit avec une certaine configuration, ainsi certaines photos, peuvent intégrer des accessoires optionnelles ou différents, seule la description détaillée, comprends exactement les éléments compris avec le produit. En cas d'erreur, nous ne pourrions être tenus pour responsable. Toute opération non contestée dans un délai d'un mois, ne peut donner lieu à réclamation, sauf dans le cadre de la garantie.",
+        "body_2": "2-b: Les offres présentées par Painted.ch ne sont valables que dans la limite des stocks disponibles.",
+        "body_3": "2-c: Painted.ch offre un service de reproduction d’images et de peintures. Il en revient au consommateur de s’assurer du respect de la propriété intellectuelle de l’œuvre qu’il souhaite faire reproduire. Painted.ch ne pourra en aucun cas être tenu responsable pour violation des droits d’auteur."
+      },
+      "part_3": {
+        "title": "3. Prix",
+        "body_1": "Les prix sont indiqués en franc suisse et ne tiennent pas compte des frais de livraison et frais de dédouanement, facturés en supplément, et indiqués avant la validation de la commande (sauf indication contraire). Les prix de nos produits sont indiqués en franc suisse hors taxe. Le paiement de la totalité du prix doit être réalisé lors de la commande. A aucun moment, les sommes versées ne pourront être considérées comme des arrhes ou des acomptes. L'exploitant s'efforce de tenir à jour sur le portail les indications se rapportant à des produits ainsi que d'éventuelles mentions de prix qui y sont publiées, mais ne peut fournir aucune garantie à cet égard. "
+      },
+      "part_4": {
+        "title": "4. Problèmes de livraison du fait du transporteur ",
+        "body_1": "Toute anomalie concernant la livraison (avarie, produit manquant par rapport au bon de livraison, colis endommagé, produits cassés...) devra être impérativement indiquée sur le bon de livraison sous forme de \"réserves manuscrites\", accompagnée de la signature du client."
+      },
+      "part_5": {
+        "title": "5. Propriété intellectuelle",
+        "body_1": "Sauf dispositions contraires, l'exploitant est le propriétaire du portail. L’ensemble des marques, noms, titres, logos, photos, dessins, textes et autres éléments matériels utilisés sur le présent portail sont la propriété d'un sujet de droit de Painted.ch. Le fait d'ouvrir des pages à l'écran, de les télécharger ou de les copier ne conduit pas à l'acquisition de droits (droits d’utilisation, droits de propriété intellectuelle, etc.). Sauf autorisation préalable écrite, il est interdit de reproduire, de transmettre (électroniquement ou par d’autres moyens), de modifier, de mettre en lien ou d’utiliser le portail à des fins publiques ou commerciales, que ce soit en tout ou partie."
+      },
+      "part_6": {
+        "title": "6. Réserves",
+        "body_1": "Painted.ch a fait de son mieux pour que le contenu de ce site web soit correct et actualisé au moment de sa publication. Néanmoins, Painted.ch ne prétend ni ne garantit que le contenu est exhaustif et sans faute et décline toute responsabilité pour les éventuelles erreurs, omissions ou imperfections. Painted.ch ne s’estime pas obligé de publier ou d’actualiser les résultats des analyses prévisionnelles destinées à refléter les événements ou les circonstances, y compris l’occurrence d’événements non anticipés après la date à laquelle ces prévisions ont été faites. "
+      },
+      "part_7": {
+        "title": "7. Limitations de la responsabilité",
+        "body_1": "Painted.ch décline toute responsabilité, jusque dans les limites autorisées par la loi, pour les dommages survenus lors d’une manipulation correcte ou incorrecte effectuée en accédant, téléchargeant, utilisant ou se fiant au contenu de ce site web ou de ses produits, même s’ils sont dus à la négligence de Painted.ch ou de tierces personnes.  L'exploitant décline toute responsabilité pour les dommages imputables (y compris en cas de négligence) à l’accès ou à l’impossibilité d’accéder à tout ou partie du portail, ou à l’usage qui en serait fait. L’accès au portail, l’utilisation de ce dernier ainsi que la possibilité de sauvegarder ou d’archiver les données transmises ne sont pas garantis."
+      },
+      "part_8": {
+        "title": "8. Confidentialité",
+        "body_1": "A part les informations stockées par son fournisseur de service Internet, Painted.ch ne recueillera pas d’informations permettant de vous identifier lorsque vous visiterez ce site web, à moins que vous ne donniez de votre plein gré de telles informations. Si vous décidez de ne pas répondre à notre demande d’informations permettant de vous identifier, vous ne pourrez peut-être pas accéder à certaines informations ni les recevoir. Les données personnelles recueillies par Painted.ch sont strictement confidentielles. Painted.ch ne révélera, ni ne divulguera, vendra, distribuera, partagera ou communiquera à des tiers les données personnelles que vous lui aurez transmises, à moins que la loi ne l’y autorise ou à l’occasion de la vente d’un produit ou de la prestation d’un service Painted.ch (afin d’assurer la continuité de la vente ou du service en question), ou à moins que Painted.ch ait obtenu votre permission. Vous devez également savoir que les informations et données non personnelles peuvent être automatiquement enregistrées par le biais des «cookies». Les cookies sont des informations stockées par les sites web pour déterminer la fréquence d’utilisation, faciliter l’accès aux sites web, vous aider à vous en servir, faciliter la personnalisation du site en fonction de vos préférences et pour mieux cibler la publicité. Les cookies sont en général automatiquement créés et la plupart des sites web les utilisent. Presque tous les navigateurs internet sont configurés pour permettre la création de cookies. Si vous préférez ne pas utiliser de cookies, vous pouvez configurer votre navigateur internet pour qu’il refuse les cookies ou qu’il vous avertisse avant de placer un cookie sur votre disque dur. "
+      },
+      "part_9": {
+        "title": "9. Législation en vigueur",
+        "body_1": "Les présentes Conditions générales sont soumises à la législation suisse et sont applicables conformément à celle-ci, même en cas de conflits relevant d’autres juridictions. Toutes les plaintes concernant les présentes Conditions générales ou l’utilisation de ce site web relèvent exclusivement des tribunaux de Berne, Suisse. Ce site web est accessible à partir de toute la Suisse et à partir d’autres pays. Painted.ch  ne garantit pas que le contenu de ce site web soit en conformité avec la législation d’autres pays. Si vous accédez à ce site à partir d’un pays autre que la Suisse, c’est à vous qu’il incombe de vous assurer que l’accès au site en question ainsi que le téléchargement, l’utilisation et la fiabilité de son contenu sont en conformité avec la législation du pays dans lequel vous vous trouvez."
+      },
+      "last_update": "Dernière mise à jour 12 Juillet 2017."
+    },
+    "order": {
+      "transports": {
+        "title": "Coûts de transport",
+        "body_1": "Le transport classique en Europe est inclus dans le prix",
+        "body_2": "Cependant nous facturons un supplément de 10% pour un transport express",
+        "normal": "Transport classique",
+        "express": "Transport express (+10%)"
+      },
+      "best_price": "Meilleur prix garantie",
+      "remember": "Si vous trouvez un prix moins cher sur le net Suisse, nous nous alignons avec un rabais supplémentaire de 5%!",
+      "which_size": {
+        "title": "Quel taille désirez-vous?",
+        "sub": "Merci de nous contacter pour un tableau de plus de 130cm. Email info@painted.ch"
+      },
+      "comment": {
+        "placeholder": "Avez-vous un souhait particulier?"
+      },
+      "name": {
+        "placeholder": "Votre Nom"
+      },
+      "email": {
+        "placeholder": "Votre Email"
+      },
+      "order_at": {
+        "title": "Nous estimons votre commande à",
+        "sub": "cliquer ci-dessous pour recevoir notre offre"
+      },
+      "pic": {
+        "btn_title": "Вrowse"
+      },
+      "errors": {
+        "title": "merci de remplir les informations manquantes"
+      },
+      "success": {
+        "body": "Merci pour votre message, vous recevrez très prochainement notre offre"
+      },
+      "submit": "Recevoir Une Offre"
+    },
+    "gallery": {
+      "genre_1": "Portraits",
+      "genre_2": "Portraits d'animaux",
+      "genre_3": "Art moderne",
+      "genre_4_1": "Paysages/",
+      "genre_4_2": "Urbains",
+      "genre_5": "Art abstrait",
+      "genre_6": "Others"
+    },
+    "helpers": {
+      "label": {
+        "order": {
+          "height": "Hauteur (cm)",
+          "width": "Largeur (cm)",
+          "transport": "Transport",
+          "comment": "Comment",
+          "email": "Email",
+          "picture": "Sélectionner votre image"
+        }
+      }
+    },
+    "activerecord": {
+      "models": {
+        "order": "Order",
+        "feedback": "Feedback"
+      }
+    },
+    "activemodel": {
+      "errors": {
+        "models": {
+          "order": {
+            "attributes": {
+              "name": {
+                "blank": "Not Found"
+              },
+              "email": {
+                "blank": "Not Found"
+              },
+              "picture": {
+                "blank": "Not Found"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
