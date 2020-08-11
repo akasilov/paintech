@@ -1,7 +1,7 @@
 #footer {
   position: relative;
   bottom: 0;
-  height: 240px;
+  height: 280px;
   width: 100%;
   padding-top: 76px;
   padding-left: 120px;
@@ -16,7 +16,11 @@
     object-fit: contain;
   }
 
-  #nav-menu {
+  .copyright{
+    color: #fff
+  }
+
+  #nav-menu, #social {
     float: right;
     margin-top: 23px;
     font-family: $secondary-font-regular;
@@ -59,6 +63,9 @@
     li {
       display: inline;
       margin-left: 50px;
+       i{
+        color: white;
+       }
     }
   }
 
