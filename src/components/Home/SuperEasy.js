@@ -12,8 +12,8 @@ import bitmapMedia from '../../assets/images/bitmap-media-1@1x.png'
 import '../../assets/stylesheets/application.scss'
 
 
-function SuperEasy(){
-
+function SuperEasy(props){
+    const { t } = props;
     return(
         <div id="super-easy" className="row ml0 mr0 p0">
             <div className="drops">
@@ -33,12 +33,12 @@ function SuperEasy(){
                     </div>
                     <div className="col-sm-5 col-xs-12 descriptions">
                     <div className="title">
-                        Super Easy
+                    {t('home_page.super_easy.title')}
                     </div>
-                    You send us any picture you wish to have painted or choose from our Gallery.
+                    {t('home_page.super_easy.description')}
                     <p>
                 <a href="#">
-                    Start Painting
+                {t('home_page.start_painting')}
                     <SvgLeft className= "arrow m0"/>
                 </a>
             </p>

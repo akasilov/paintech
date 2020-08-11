@@ -9,8 +9,8 @@ import SvgMaskCopy3 from '../../assets/images/MaskCopy3'
 import '../../assets/stylesheets/application.scss'
 
 
-function BestService(){
-
+function BestService(props){
+    const { t } = props;
     return(
         <div id="best-service">
         <div className="drops">
@@ -26,12 +26,12 @@ function BestService(){
         <div className="row mr0 ml0">
             <div className="descriptions">
                 <div className="title">
-                    Best Service
+                {t('home_page.best_service.title')}
                 </div>
-                Our experienced artists won't stop painting until you're fully satisfied.
+                {t('home_page.best_service.description')}
                 <p className="mb0">
                     <a href="/">
-                        Start Painting
+                    {t('home_page.start_painting')}
                         <SvgLeft className="arrow m0" />
                     </a>
                 </p>

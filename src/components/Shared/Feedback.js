@@ -4,7 +4,7 @@ import oval2 from '../../assets/images/oval-2-copy-7@1x.png'
 
 
 function Feedback(props){
-
+  const { t } = props;
     if (props.show === true)
     {
         return (
@@ -25,10 +25,10 @@ function Feedback(props){
                         src={oval2}
                         alt="Oval 2 copy 7@1x"
                       />
-                      <span className="name"> info@painted.ch </span>
+                      <span className="name"> {t('feedbacks.msg.title.name')} </span>
                     </div>
                     <div className="body">
-                      Hi! Have a look around! Let me know if you have any questions.
+                    {t('feedbacks.msg.body')}
                     </div>
                   </div>
                   <div className="inputs">
@@ -40,7 +40,7 @@ function Feedback(props){
                         name="feedback[email]"
                       />
                       <label className="control-label" htmlFor="feedback_email">
-                        My email
+                      {t('feedbacks.form.e_mail_label')}
                       </label>
                       <i className="bar"></i>
                     </div>
@@ -51,14 +51,14 @@ function Feedback(props){
                         name="feedback[comment]"
                       ></textarea>
                       <label className="control-label" htmlFor="feedback_comment">
-                        My comments
+                      {t('feedbacks.form.comments_label')}
                       </label>
                       <i className="bar"></i>
                     </div>
                   </div>
                   <div className="button-container">
                     <button name="button" type="submit" className="button send">
-                      <span> Send </span>
+                      <span> {t('feedbacks.form.send')}</span>
                     </button>{" "}
                   </div>
                 </form>

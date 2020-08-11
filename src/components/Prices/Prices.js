@@ -11,13 +11,13 @@ function importAll(r) {
     return images;
 }
 
-function Prices() {
+function Prices(props) {
     const images = importAll(require.context('../../assets/images/', false, /\.(png|jpe?g)$/));
-  
+    const { t } = props;
     return (
       <div classNameName="body">
-        <ChatBtn />
-        <Header route='prices' />
+        <ChatBtn t= {t}/>
+        <Header t= {t} route='prices' />
         <div className="orders container-fluid">
           <div id="content" className="col-9 offset-2">
             <div className="drop">
@@ -89,18 +89,15 @@ function Prices() {
             </div>
             <div id="prices" className="col-12 col-sm-10 col-md-12 text-center">
               <img src={images["brush-1.png"]} alt="" className="brush-1" />
-              <span className="title">Prices</span>
+              <span className="title">{t('home_page.hero.nav_menu.prices')}</span>
             </div>
 
             <div className="best-price-guarantee">
-              <p>Best price guaranteed:</p>
+              <p>{t('order.best_price')}:</p>
             </div>
 
             <div className="remember-if-you-find">
-              <p>
-                Remember if you find a better price for a hand made oil painting
-                on the Swiss net we meet the price and grant you an extra 5%
-                discount!
+              <p>{t('order.remember')}
               </p>
             </div>
 
@@ -111,11 +108,11 @@ function Prices() {
             </div>
 
             <div className="which-size-would-you">
-              <p>Which size would you like?</p>
+              <p>{t('order.which_size.title')}</p>
             </div>
 
             <div className="field-size field-heigth">
-              <label htmlFor="order_width">Width (cm)</label>
+              <label htmlFor="order_width">{t('helpers.label.order.width')}</label>
               <select id="order_width" name="order[width]">
                 <option value="30">30</option>
                 <option value="40">40</option>
@@ -133,7 +130,7 @@ function Prices() {
             </div>
 
             <div className="field-size field-width ">
-              <label htmlFor="order_hieght">Height (cm)</label>
+              <label htmlFor="order_hieght">{t('helpers.label.order.height')}</label>
               <select id="order_height" name="order[height]">
                 <option value="30">30</option>
                 <option value="40">40</option>
@@ -151,11 +148,11 @@ function Prices() {
             </div>
 
             <div className="please-contact">
-              Please contact us for sizes bigger than 130cm.
+            {t('order.which_size.sub')}
             </div>
 
             <div className="transport-fees">
-              <p>Transport fees?</p>
+              <p>{t('order.transports.title')}</p>
             </div>
 
             <div className="sofa">
@@ -165,18 +162,18 @@ function Prices() {
             </div>
 
             <div className="the-transport-fees">
-              <p>The transport fees within Europe are free of charge.</p>
+              <p>{t('order.transports.body_1')}</p>
               <p>
-                However we charge an extra 10% if you desire an express delivery
+              {t('order.transports.body_2')}
               </p>
             </div>
 
             <div className="field-transport">
-              <label for="order_transport">Transport</label>
+              <label for="order_transport">{t('helpers.label.order.transport')}</label>
               <select id="order_transport" name="order[transport]">
-                <option value="normal">Normal Post</option>
+                <option value="normal">{t('order.transports.normal')}</option>
                 <option value="express">
-                  Express delivery (10% surcharge)
+                {t('order.transports.express')}
                 </option>
               </select>
               <hr className="line-select-transport"></hr>
@@ -191,12 +188,12 @@ function Prices() {
               <hr className="line-comment"></hr>
             </div>
 
-            <div className="we-estimate">We estimate your order at</div>
+            <div className="we-estimate">{t('order.order_at.title')}</div>
             <div className="chf">
               <span id="calculatedPrice">269</span> CHF
             </div>
             <div className="click-below">
-              click below to get an official price offer
+            {t('order.order_at.sub')}
             </div>
 
             <div className="file">
@@ -215,7 +212,7 @@ function Prices() {
 
             <div className="field-upload-picture">
               <label id="field-upload" for="order_picture">
-                Upload the picture
+              {t('helpers.label.order.picture')}
               </label>
               <hr className="line-under-upload" />
             </div>
@@ -262,7 +259,7 @@ function Prices() {
           </div>
         </div>
 
-        <Footer />
+        <Footer t= {t}/>
       </div>
     );
 }

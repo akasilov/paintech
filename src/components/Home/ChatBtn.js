@@ -3,8 +3,8 @@ import SvgChat from '../../assets/images/Chat'
 import '../../assets/stylesheets/application.scss'
 import Feedback from '../Shared/Feedback'
 
-function ChatBtn(){
-
+function ChatBtn(props){
+    const { t } = props;
     const [show, showModal] = useState(false);
 
     const closeModal = ()=>{
@@ -16,7 +16,7 @@ function ChatBtn(){
             <div className="chat-btn" id="show-modal" onClick={() => showModal(true)}>
                 <SvgChat className='chat' />
             </div>
-            <Feedback show={show} onClose={closeModal}/>
+            <Feedback t = { t } show={show} onClose={closeModal}/>
         </div>
     )
 }

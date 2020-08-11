@@ -5,16 +5,16 @@ import {
     Link
 } from "react-router-dom";
 
-function Footer(){
-
+function Footer(props){
+    const { t } = props;
     return (
         <div id="footer">
             <div id="logo">
                 <SvgLogo />
             </div>
             <ul id="nav-menu">
-                <li><Link  to="/about">About Us</Link></li>
-                <li><Link  to="/terms">Sales Conditions</Link></li>
+                <li><Link  to="/about">{t('home_page.footer.nav_menu.about')}</Link></li>
+                <li><Link  to="/terms">{t('home_page.footer.nav_menu.sales_conditions')}</Link></li>
             </ul>
         </div>
 

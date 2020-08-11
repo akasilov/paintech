@@ -11,13 +11,13 @@ function importAll(r) {
     return images;
 }
 
-function About() {
+function About(props) {
     const images = importAll(require.context('../../assets/images/', false, /\.(png|jpe?g)$/));
-  
+    const { t } = props;
     return (
       <div className="body">
-        <ChatBtn />
-        <Header />
+        <ChatBtn t= {t}/>
+        <Header t= {t}/>
         <div id="about" className="container-fluid">
   <div className="row m0 clearfix">
     <div id="about_header" className="col-12">
@@ -33,7 +33,7 @@ function About() {
     <div id="content" className="col-10 offset-1">
       <div className="row m0">
         <div id="title" className="col-12 text-center">
-          About Us
+          {t('home_page.footer.nav_menu.about')}
           <img alt="" src={images['brush-9@1x.png']} className='brush-title' />
         </div>
       </div>
@@ -59,12 +59,12 @@ function About() {
           <img alt="" src={images['drop-11@1x.png']} className='drop-11 media' />
         </div>
         <div id="description" className="col-6">
-          <p className="header">Hello</p>
-          <p className="about-title">We are a small start-up in Bern, Switzerland with the aim of making cool and affordable art possible for everyone.</p>
-          <p className="about-title">Typical, boring decor is over. With painted.ch you can order a unique oil painting for the top price and get framed home!</p>
-          <p className="about-title about-info info">Email</p>
-          <p className="about-title">info@painted.ch</p>
-          <p className="about-title about-info">Phone Number</p>
+          <p className="header">{t('about.description.title')}</p>
+          <p className="about-title">{t('about.description.body.part_1')}</p>
+          <p className="about-title">{t('about.description.body.part_2')}</p>
+          <p className="about-title about-info info">{t('helpers.label.order.email')}</p>
+          <p className="about-title">{t('feedbacks.msg.title.name')}</p>
+          <p className="about-title about-info">{t('about.description.body.number')}</p>
           <p className="about-title">+41 (0) 76 339 95 67</p>
           <p className="about-title">+41 (0) 78 910 68 81</p>
         </div>
@@ -73,7 +73,7 @@ function About() {
   </div>
 </div>
 
-        <Footer />
+        <Footer t= {t}/>
       </div>
     );
 }

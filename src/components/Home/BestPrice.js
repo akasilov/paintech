@@ -13,8 +13,8 @@ import SvgMaskCopy2 from '../../assets/images/MaskCopy2'
 import SvgMask from '../../assets/images/Mask'
 import SvgLeft from '../../assets/images/Left'
 
-function BestPrice(){
-
+function BestPrice(props){
+    const { t } = props;
     return (
         <div id="best-price" className="row ml0 mr0 p0">
             <div className="drops">
@@ -27,12 +27,12 @@ function BestPrice(){
             <div className="col-sm-6 col-md-6 col-xs-12">
                 <div className="descriptions">
                     <div className="title">
-                        Best Price
+                    {t('home_page.best_price.title')}
                     </div>
-                    If you find cheaper on the net, we give you the same price plus a 5 % discount.
+                    {t('home_page.best_price.description')}
                     <p>
                         <a href="/">
-                        Start Painting
+                        {t('home_page.start_painting')}
                         <SvgLeft className="arrow m0" />
                     </a>
                     </p>

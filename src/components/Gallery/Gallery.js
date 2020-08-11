@@ -15,8 +15,8 @@ function Gallery(props) {
     const { t } = props;
     return (
       <div className="body">
-        <ChatBtn />
-        <Header route='gal' />
+        <ChatBtn t= {t}/>
+        <Header t= {t} route='gal' />
         <div className="container-fluid gall">
           <div id="content" className="col-9 offset-2">
             <div className="drop">
@@ -145,7 +145,7 @@ function Gallery(props) {
               />
             </div>
             <div className="portrait genre">
-              <p>Portrait</p>
+              <p> {t('gallery.genre_1')}</p>
               <div className="grow pic pic-1">
                 <img alt="" src={images["bitmap-p-1@1x.png"]} />
               </div>
@@ -178,7 +178,7 @@ function Gallery(props) {
             </div>
 
             <div className="pet-portrait genre">
-              <p>Pet Portrait</p>
+              <p>{t('gallery.genre_2')}</p>
               <div className="grow pic pic-1">
                 <img alt="" src={images["bitmap-p-p-1@1x.png"]} />
               </div>
@@ -210,7 +210,7 @@ function Gallery(props) {
               />
             </div>
             <div className="modern-art genre">
-              <p>Modern Art</p>
+              <p>{t('gallery.genre_3')}</p>
               <div className="grow pic pic-1">
                 <img alt="" src={images["bitmap-m-a-1@1x.jpg"]} />
               </div>
@@ -242,8 +242,8 @@ function Gallery(props) {
               />
             </div>
             <div className="landscape-urban genre">
-              <p>Landscapre/</p>
-              <p>Urban</p>
+              <p>{t('gallery.genre_4_1')}</p>
+              <p>{t('gallery.genre_4_2')}</p>
               <div className="img-landscape">
                 <div className="grow pic pic-1">
                   <img alt="" src={images["bitmap-l-u-1@1x.png"]} />
@@ -277,7 +277,7 @@ function Gallery(props) {
               </div>
             </div>
             <div className="abstrakt-art genre">
-              <p>Abstract Art</p>
+              <p>{t('gallery.genre_5')}</p>
               <div className="grow pic pic-1">
                 <img alt="" src={images["bitmap-a-a-1@1x.png"]} />
               </div>
@@ -309,11 +309,11 @@ function Gallery(props) {
               />
             </div>
             <div className="others-genre genre no-media">
-              <p>Others</p>
+              <p>{t('gallery.genre_6')}</p>
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer t= {t} />
       </div>
     );
 }

@@ -9,24 +9,24 @@ import Footer from '../Shared/Footer'
 import ChatBtn from './ChatBtn'
 import drop17 from '../../assets/images/drop-17@1x.png'
 
-function Home(){
-
+function Home(props){
+    const { t } = props;
     return(
         <div className="body">
-            <ChatBtn />
+            <ChatBtn t= {t}/>
             <div className="container-fluid">
                 <div id="hero" className="row">
                     <div className="content" id="content">
                     </div>
                 </div>
-                <Header route='home'/>
-                <HowItWords />
-                <SuperEasy />
-                <BestPrice />
-                <BestService />
+                <Header t= {t} route='home'/>
+                <HowItWords t= {t}/>
+                <SuperEasy t= {t} />
+                <BestPrice t= {t}/>
+                <BestService t= {t}/>
                 <img src={drop17}  className='drop-17' alt="" />
             </div>
-            <Footer />
+            <Footer t= {t}/>
         </div>
     );
 }

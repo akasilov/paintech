@@ -12,8 +12,8 @@ import dropTermsMedia from '../../assets/images/drop-terms-media-1@1x.png'
 import '../../assets/stylesheets/application.scss'
 
 
-function HowItWorks(){
-
+function HowItWorks(props){
+    const { t } = props;
     return(
         <div id="how-it-works" className="row ml0 mr0 p0">
             <div className="drops">
@@ -25,33 +25,33 @@ function HowItWorks(){
             </div>
             <div className="col-9 offset-2 p0">
                 <div className ="row">
-                    <div className="col-12 title">How it works</div>
+                    <div className="col-12 title">{t('home_page.how_it_works.title')}</div>
                 </div>
                 <div className="row">
                     <div className="col-sm-4 col-xs-12 pl0 step">
                         <Icon1 className='icon-1' />
-                        <h2>Step 1</h2>
-                        You send us any picture you wish to have hand painted in oil painting.
+                        <h2>{t('home_page.how_it_works.step')} 1</h2>
+                        {t('home_page.how_it_works.step_1')}
                     </div>
                     <div className="col-sm-4 col-xs-12 pl0 step">
                         <Icon2 className='icon-2' />
-                        <h2>Step 2</h2>
-                        As soon as we have received payment the artist starts painting.
+                        <h2>{t('home_page.how_it_works.step')} 2</h2>
+                        {t('home_page.how_it_works.step_2')}
                     </div>
                     <div className="col-sm-4 col-xs-12 pl0 step">
                         <Icon3 className='icon-3' />
-                        <h2>Step 3</h2>
-                        When finished the artist sends you a picture of the result to make sure you're fully satisfied and makes any changes you request.
+                        <h2>{t('home_page.how_it_works.step')} 3</h2>
+                        {t('home_page.how_it_works.step_3')}
                     </div>
                     <div className="col-sm-4 col-xs-12 pl0 step">
                         <Icon4 className='icon-4' />
-                        <h2>Step 4</h2>
-                        The painting is framed with a wooden structure and is packed for transport.
+                        <h2>{t('home_page.how_it_works.step')} 4</h2>
+                        {t('home_page.how_it_works.step_4')}
                     </div>
                     <div className="col-sm-4 col-xs-12 pl0 step">
                         <Icon5 className='icon-5' />
-                        <h2>Step 5</h2>
-                        The package is sent directly to your delivery address.
+                        <h2>{t('home_page.how_it_works.step')} 5</h2>
+                        {t('home_page.how_it_works.step_5')}
                     </div>
                 </div>
             </div>
