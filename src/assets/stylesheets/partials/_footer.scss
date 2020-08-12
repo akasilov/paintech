@@ -1,14 +1,9 @@
-#footer {
-  position: relative;
-  bottom: 0;
-  height: 280px;
-  width: 100%;
-  padding-top: 76px;
-  padding-left: 120px;
-  padding-right: 120px;
+footer {
   background-color: $footer-color;
-  z-index: 1;
-
+  
+  .container-fluid{
+    background-color: $footer-color !important;
+  }
   #logo {
     width: 240px;
     height: 75px;
@@ -16,12 +11,17 @@
     object-fit: contain;
   }
 
-  .copyright{
+  .footer-copyright{
     color: #fff
   }
+  .contact{
+    color: #fff;
+    clear: both;
+    padding-top: 17px;
+  }
 
-  #nav-menu, #social {
-    float: right;
+  #nav-menu {
+    float: left;
     margin-top: 23px;
     font-family: $secondary-font-regular;
     font-size: 24px;
@@ -29,9 +29,10 @@
     line-height: 1.13;
     letter-spacing: -0.1px;
     list-style-type: none;;
-
+    li{
+    margin-bottom: 25px;
+    }
     a {
-      display: inline-block;
       &:link {
         text-decoration: none;
         color: $white;
@@ -59,14 +60,21 @@
         color: $hover-color-a;
       }
     }
-
-    li {
-      display: inline;
-      margin-left: 50px;
-       i{
-        color: white;
-       }
-    }
+  
   }
-
+  #social {
+    text-align: right;
+    ul {
+    list-style-type: none;
+    display: inline-flex;
+      padding: 0;
+li{
+  font-size: 24px;
+  padding: 15px;
+  i{
+    color: white;
+   }
+}
+}
+  }
 }
