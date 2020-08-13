@@ -2,7 +2,7 @@ import * as React from "react";
 
 function SvgIcon1(props) {
   return (
-    <svg width={97} height={88} {...props}>
+    <svg {...props} viewBox="0 0 100 100">
       <g fill="none" fillRule="evenodd">
         <path fill="#EE451F" d="M0 28h80v60H0z" />
         <path fill="#FF7200" d="M0 26h80v60H0z" />

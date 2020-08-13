@@ -1,6 +1,5 @@
 import React from 'react';
 import SvgLeft from '../../assets/images/Left'
-import SvgMaskCopy from '../../assets/images/MaskCopy'
 import drop5 from '../../assets/images/drop-5@1x.png'
 import drop6 from '../../assets/images/drop-6@1x.png'
 import drop7 from '../../assets/images/drop-7@1x.png'
@@ -27,9 +26,8 @@ function SuperEasy(props){
                 <div className="row">
                     <div className="col-sm-9 col-xs-12 col-md-7">
                         <img src={brush1} className= 'brush' alt=""/>
-                        <img src={bitmap} className= 's-e-img' alt=""/>
+                        <img src={bitmap} className= 's-e-img shadow-image' alt=""/>
                         <img src={bitmapMedia} className= 's-e-img-media media' alt=""/>
-                        <SvgMaskCopy className= 'shadow' />
                     </div>
                     <div className="col-sm-5 col-xs-12 descriptions">
                     <div className="title">
@@ -46,7 +44,7 @@ function SuperEasy(props){
                 </div>
             </div>
         </div>
-        
+
     )
 }
 export default SuperEasy

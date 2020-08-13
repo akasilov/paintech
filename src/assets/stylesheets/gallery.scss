@@ -1,6 +1,45 @@
 .gall {
   width: 110% !important;
-	margin-left: -10vw !important;
+  margin-left: -10vw !important;
+  .h-gallery {
+    width: 100%;
+    // div#ReactGridGallery:first-child {
+    //   margin-top: -238px !important;
+    //   margin-left: 19vw !important;
+    // }
+    // .ReactGridGallery_tile:nth-child(3) {
+    //   margin-top: -238px !important;
+    //   margin-left: 42.5vw !important;
+    // }
+    // .ReactGridGallery_tile:nth-child(4) {
+    //   right: -64vw !important;
+    //   margin-top: -238px !important;
+    // }
+    // .ReactGridGallery_tile {
+    //   padding: 0px;
+    //   height: 238px;
+    //   width: 297px;
+    //   overflow: hidden;
+    //   float: left;
+    //   position: relative;
+    //   margin-top: -60px;
+    //   .ReactGridGallery_tile-viewport,
+    //   img {
+    //     height: 100% !important;
+    //     width: 100% !important;
+    //     img {
+    //       margin-left: 0 !important;
+    //       transition: all 0.5s ease;
+    //     }
+    //     :hover img {
+    //       height: 252px !important;
+    //       width: 315px !important;
+    //       margin-left: -7px !important;
+    //       margin-top: -6px !important;
+    //     }
+    //   }
+    // }
+  }
   .pic {
     height: 238px;
     width: 297px;
@@ -24,8 +63,8 @@
 
   .pic:hover {
     cursor: pointer;
-    -webkit-box-shadow: 1px 5px 20px #6E6E6E;
-    box-shadow: 1px 5px 20px #6E6E6E;
+    -webkit-box-shadow: 1px 5px 20px #6e6e6e;
+    box-shadow: 1px 5px 20px #6e6e6e;
   }
   .pic img {
     height: 238px;
@@ -62,20 +101,20 @@
     position: absolute;
     width: 100%;
     left: 0;
-  	.drop-19-2 {
-			width: 31px;
-		  height: 95px;
+    .drop-19-2 {
+      width: 31px;
+      height: 95px;
       top: -75px;
       right: -11.2%;
       mix-blend-mode: multiply;
-  	}
-  	.drop-14 {
-  		width: 48px;
-		  height: 48px;
+    }
+    .drop-14 {
+      width: 48px;
+      height: 48px;
       top: 50px;
       right: -8%;
       mix-blend-mode: multiply;
-  	}
+    }
     .drop-14-copy {
       width: 46px;
       height: 46px;
@@ -88,7 +127,7 @@
       height: 337px;
       mix-blend-mode: multiply;
       top: -10px;
-      left: -14%;;
+      left: -14%;
     }
     .drop-21-2 {
       width: 100px;
@@ -134,38 +173,38 @@
     }
   }
 
-	.title {
-		text-align: center;
-		p {
-			width: 760px;
-		  height: 82px;
-		  font-family: $font-roboto-light;
-		  font-size: 90px;
-		  font-weight: 300;
-		  line-height: 0.91;
-		  letter-spacing: -1.6px;
-		  text-align: center;
-		  color: $text-color;
-		  margin-top: 124px;
-		  margin-left: 16vw;
-		}
-		.brush-title {
+  .title {
+    text-align: center;
+    p {
+      width: 760px;
+      height: 82px;
+      font-family: $font-roboto-light;
+      font-size: 90px;
+      font-weight: 300;
+      line-height: 0.91;
+      letter-spacing: -1.6px;
+      text-align: center;
+      color: $text-color;
+      margin-top: 124px;
+      margin-left: 16vw;
+    }
+    .brush-title {
       z-index: -1;
-			width: 351px;
-		  mix-blend-mode: multiply;
-		  top: -200px;
-		  left: 34vw;
-		}
-	}
+      width: 351px;
+      mix-blend-mode: multiply;
+      top: -200px;
+      left: 34vw;
+    }
+  }
 
   .genre {
-  	font-family: $secondary-font-regular;
-	  font-size: 24px;
-	  line-height: 1.13;
-	  letter-spacing: -0.1px;
-	  text-align: left;
-	  color: $text-color;
-		margin-bottom: 270px;
+    font-family: $secondary-font-regular;
+    font-size: 24px;
+    line-height: 1.13;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: $text-color;
+    margin-bottom: 270px;
     margin-left: -1vw;
     width: 10%;
     p {
@@ -175,7 +214,7 @@
   }
 
   .portrait {
-  	margin-top: 132px;
+    margin-top: 132px;
   }
   .img-landscape {
     margin-top: -27px;

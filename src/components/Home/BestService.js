@@ -17,10 +17,10 @@ function BestService(props){
             <img src={drop14} className='drop-14' alt=""/>
         </div>
         <div className="row ml0 mr0 p0">
-            <div className="col-xs-12 col-sm-12 img">
-                <img src={brush3} className='brush' alt=""/>
+            <div className="col-xs-12 col-sm-12 img ">
+                <img src={brush3} className='brush shadow-image' alt=""/>
                 <SvgMaskCopy3 className='shadow'/>
-                <img src={bitmapBS} className='b-s-img' alt=""/>
+                <img src={bitmapBS} className='b-s-img shadow-image' alt=""/>
             </div>
         </div>
         <div className="row mr0 ml0">

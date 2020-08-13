@@ -19,8 +19,8 @@ function HowItWorks(props){
             <div className="drops">
                     <img src= {drop1} className='drop-1 no-media' alt="" />
                     <img src={drop2} className='drop-2 no-media' alt="" />
-                    <img src={drop3} className='drop-3' alt=""/>
-                    <img src={drop22} className='drop-4' alt=""/>
+                    <img src={drop3} className='drop-3 no-media' alt=""/>
+                    <img src={drop22} className='drop-4 no-media'  alt=""/>
                     <img src={dropTermsMedia} className='drop-5-media media' alt="" />
             </div>
             <div className="col-9 offset-2 p0">

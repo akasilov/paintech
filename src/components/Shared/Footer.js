@@ -10,18 +10,18 @@ function Footer(props) {
     <footer class="page-footer font-small teal pt-4">
       <div class="container-fluid text-center text-md-left">
         <div class="row">
-          <div class="offset-sm-2 offset-xs-1 col-xs-10 col-sm-8">
+          <div class="offset-md-2 col-md-8">
             <div class="row">
-            <div class="col-md-4 mt-md-0 mt-3">
+            <div class="col-sm-12 col-md-6 ">
               <div id="logo">
                 <SvgLogo />
               </div>
-              <p class="contact text-left">Email us: info@painted.ch <br/>
+              <p class="contact ">Email us: info@painted.ch <br/>
             Schweiz <br/>
             UID: CHE‐326.878.129 </p>
           </div>
-          <hr class="clearfix w-100 d-md-none pb-3"></hr>
-          <div class="col-md-4 mb-md-0 mb-3">
+      
+          <div class="col-sm-12 col-md-6">
 
               <ul id="nav-menu">
                 <li>
@@ -34,11 +34,9 @@ function Footer(props) {
                     {t("home_page.footer.nav_menu.sales_conditions")}
                   </Link>
                 </li>
-              </ul>
-
-          </div>
-          <div class="col-md-4 mb-md-0 mb-3" id="social">
-              <ul >
+                <li>
+                  <div id="social">
+                  <ul >
                 <li>
                   <a href={links.instagram}>
                     <i class="fa fa-instagram"></i>
@@ -60,16 +58,21 @@ function Footer(props) {
                   </a>
                 </li>
               </ul>
-      
-          </div>
-            </div>
-          </div>
-    
-        </div>
+                  </div>
+                </li>
+              </ul>
 
-        <div class="footer-copyright text-center py-3">
+          </div>
+       
+            </div>
+            <div class="footer-copyright col-sm-12 text-center py-3">
           © 2020 www.painted.ch All rights reserved
         </div>
+          </div>
+         
+        </div>
+
+      
       </div>
     </footer>
   );

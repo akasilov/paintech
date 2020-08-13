@@ -160,6 +160,7 @@
       margin-top: -30px;
       h2 {
         width: 50vw;
+        margin-top: -52% !important;
         font-size: 24px;
         line-height: 1.17;
         margin-bottom: 5px;
@@ -171,8 +172,10 @@
         width: 50px;
         margin-bottom: 0;
       }
-      .icon-1 {
-        margin-left: -5px;
+      .icon-1, .icon-2, .icon-3, .icon-4, .icon-5 {
+        margin-left: -96px;
+        padding: 13px;
+        overflow: visible;
         z-index: 2;
       }
     }
