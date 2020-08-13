@@ -7,21 +7,21 @@ import * as links from "../../assets/config/links";
 function Footer(props) {
   const { t } = props;
   return (
-    <footer class="page-footer font-small teal pt-4">
-      <div class="container-fluid text-center text-md-left">
-        <div class="row">
-          <div class="offset-md-2 col-md-8">
-            <div class="row">
-            <div class="col-sm-12 col-md-6 ">
+    <footer className="page-footer font-small teal pt-4">
+      <div className="container-fluid text-center text-md-left">
+        <div className="row">
+          <div className="offset-md-2 col-md-8">
+            <div className="row">
+            <div className="col-sm-12 col-md-6 ">
               <div id="logo">
                 <SvgLogo />
               </div>
-              <p class="contact ">Email us: info@painted.ch <br/>
+              <p className="contact ">Email us: info@painted.ch <br/>
             Schweiz <br/>
             UID: CHE‐326.878.129 </p>
           </div>
       
-          <div class="col-sm-12 col-md-6">
+          <div className="col-sm-12 col-md-6">
 
               <ul id="nav-menu">
                 <li>
@@ -39,22 +39,22 @@ function Footer(props) {
                   <ul >
                 <li>
                   <a href={links.instagram}>
-                    <i class="fa fa-instagram"></i>
+                    <i className="fa fa-instagram"></i>
                   </a>
                 </li>
                 <li>
                   <a href={links.facebook}>
-                    <i class="fa fa-facebook"></i>
+                    <i className="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li>
                   <a href={links.youtube}>
-                    <i class="fa fa-youtube"></i>
+                    <i className="fa fa-youtube"></i>
                   </a>
                 </li>
                 <li>
                   <a href={links.telegram}>
-                    <i class="fa fa-telegram"></i>
+                    <i className="fa fa-telegram"></i>
                   </a>
                 </li>
               </ul>
@@ -65,7 +65,7 @@ function Footer(props) {
           </div>
        
             </div>
-            <div class="footer-copyright col-sm-12 text-center py-3">
+            <div className="footer-copyright col-sm-12 text-center py-3">
           © 2020 www.painted.ch All rights reserved
         </div>
           </div>
