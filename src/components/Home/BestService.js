@@ -30,7 +30,7 @@ function BestService(props){
                 </div>
                 {t('home_page.best_service.description')}
                 <p className="mb0">
-                    <a href="/">
+                    <a href="/prices">
                     {t('home_page.start_painting')}
                         <SvgLeft className="arrow m0" />
                     </a>

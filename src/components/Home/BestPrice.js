@@ -31,7 +31,7 @@ function BestPrice(props){
                     </div>
                     {t('home_page.best_price.description')}
                     <p>
-                        <a href="/">
+                        <a href="/prices">
                         {t('home_page.start_painting')}
                         <SvgLeft className="arrow m0" />
                     </a>

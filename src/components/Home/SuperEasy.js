@@ -35,7 +35,7 @@ function SuperEasy(props){
                     </div>
                     {t('home_page.super_easy.description')}
                     <p>
-                <a href="#">
+                <a href="/prices">
                 {t('home_page.start_painting')}
                     <SvgLeft className= "arrow m0"/>
                 </a>
