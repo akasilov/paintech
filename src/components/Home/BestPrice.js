@@ -41,12 +41,11 @@ function BestPrice(props){
             <div className="col-sm-6 col-md-6 col-xs-12">
                 <div className="img">
                     <img src={brush2} className='brush' alt="" />
-                    <img src={bitmapBP2} className='b-p-img2' alt="" />
+                    <img src={bitmapBP2} className='b-p-img2 shadow-image' alt="" />
                     <img src={bitmapMedia2} className='b-p-img2-media media' alt=""/>
-                    <SvgMaskCopy2  className='shadow-2'/>
                     <div className="img-2">
-                        <img src={bitmapBP1} className='b-p-img1' alt="" />
-                        <SvgMask className='shadow-1' />
+                        <img src={bitmapBP1} className='b-p-img1 shadow-image' alt="" />
+                        {/* <SvgMask className='shadow-1' /> */}
                     </div>
                 </div>
             </div>

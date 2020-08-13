@@ -7,29 +7,29 @@ import * as links from "../../assets/config/links";
 function Footer(props) {
   const { t } = props;
   return (
-    <div id="footer">
+    <footer id="footer">
       <div id="logo">
         <SvgLogo />
       </div>
       <ul id="social">
         <li>
-          <a href={links.instagram}>
-            <i class="fa fa-instagram"></i>
+          <a href={links.instagram} target="_blank">
+            <i class="social-icon fa fa-instagram"></i>
           </a>
         </li>
         <li>
-          <a href={links.facebook}>
-            <i class="fa fa-facebook"></i>
+          <a href={links.facebook} target="_blank">
+            <i class="social-icon fa fa-facebook"></i>
           </a>
         </li>
         <li>
-          <a href={links.youtube}>
-            <i class="fa fa-youtube"></i>
+          <a href={links.youtube} target="_blank">
+            <i class="social-icon fa fa-youtube"></i>
           </a>
         </li>
         <li>
-          <a href={links.telegram}>
-            <i class="fa fa-telegram"></i>
+          <a href={links.telegram} target="_blank">
+            <i class="social-icon fa fa-telegram"></i>
           </a>
         </li>
       </ul>
@@ -56,7 +56,7 @@ function Footer(props) {
             <p>(C) 2020 www.painted.ch All rights reserved</p>
           </div>
           </div>
-    </div>
+    </footer>
   );
 }
 
