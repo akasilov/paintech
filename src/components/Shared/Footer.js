@@ -7,7 +7,7 @@ import * as links from "../../assets/config/links";
 function Footer(props) {
   const { t } = props;
   return (
-    <div id="footer">
+    <footer id="footer">
       <div id="logo">
         <SvgLogo />
       </div>
@@ -56,7 +56,7 @@ function Footer(props) {
             <p>(C) 2020 www.painted.ch All rights reserved</p>
           </div>
           </div>
-    </div>
+    </footer>
   );
 }
 
