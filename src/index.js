@@ -4,14 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';	
-import './fonts/RobotoSlab-Light.ttf'
-import './fonts/Montserrat-Regular.ttf'
-import './fonts/HKGrotesk-Regular.ttf'
+// import './fonts/RobotoSlab-Light.ttf'
+// import './fonts/Montserrat-Regular.ttf'
+// import './fonts/HKGrotesk-Regular.ttf'
 import './i18n';
+import ScrollToTop from './components/Shared/ScrollToTop'
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
 
 ReactDOM.render(
   <Suspense fallback={(<div>Loading</div>)}>
-    <App useSuspense={true} />
+    <Router>
+      <ScrollToTop>
+        <App useSuspense={true} />
+      </ScrollToTop>
+    </Router>
   </Suspense>,
   document.getElementById('root')
 );
