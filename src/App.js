@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import Home from './components/Home/Home'
 import Gallery from './components/Gallery/Gallery'
 import About from './components/About/About'
@@ -6,12 +6,12 @@ import SalesCondition from './components/SalesCondition/SalesCondition'
 import Prices from './components/Prices/Prices'
 import { useTranslation, withTranslation} from 'react-i18next';
 
-
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+
 
 const THome = withTranslation()(Home);
 const TGallery = withTranslation()(Gallery);
@@ -27,15 +27,13 @@ function App() {
   };
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/"> <THome langChange={changeLanguage}/></Route>
-        <Route path="/gallery"><TGallery langChange={changeLanguage}/></Route>
-        <Route path="/about"><TAbout langChange={changeLanguage} /></Route>
-        <Route path="/terms"><TSalesCondition langChange={changeLanguage}/></Route>
-        <Route path="/prices"><TPrices langChange={changeLanguage}/></Route>
-      </Switch>
-    </Router>
+        <Switch>
+          <Route exact path="/"> <THome langChange={changeLanguage}/></Route>
+          <Route path="/gallery"><TGallery langChange={changeLanguage}/></Route>
+          <Route path="/about"><TAbout langChange={changeLanguage} /></Route>
+          <Route path="/terms"><TSalesCondition langChange={changeLanguage}/></Route>
+          <Route path="/prices"><TPrices langChange={changeLanguage}/></Route>
+        </Switch>
   );
 }
 
