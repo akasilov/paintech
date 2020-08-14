@@ -28,27 +28,27 @@ function HowItWorks(props){
                     <div className="col-12 title">{t('home_page.how_it_works.title')}</div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-4 col-xs-12 pl0 step">
+                    <div className="col-sm-12 col-md-4  pl0 step">
                         <Icon1 className='icon-1' />
                         <h2>{t('home_page.how_it_works.step')} 1</h2>
                         {t('home_page.how_it_works.step_1')}
                     </div>
-                    <div className="col-sm-4 col-xs-12 pl0 step">
+                    <div className="col-sm-12  col-md-4 pl0 step">
                         <Icon2 className='icon-2' />
                         <h2>{t('home_page.how_it_works.step')} 2</h2>
                         {t('home_page.how_it_works.step_2')}
                     </div>
-                    <div className="col-sm-4 col-xs-12 pl0 step">
+                    <div className="col-md-4 col-sm-12 pl0 step">
                         <Icon3 className='icon-3' />
                         <h2>{t('home_page.how_it_works.step')} 3</h2>
                         {t('home_page.how_it_works.step_3')}
                     </div>
-                    <div className="col-sm-4 col-xs-12 pl0 step">
+                    <div className="col-md-4 col-sm-12 pl0 step">
                         <Icon4 className='icon-4' />
                         <h2>{t('home_page.how_it_works.step')} 4</h2>
                         {t('home_page.how_it_works.step_4')}
                     </div>
-                    <div className="col-sm-4 col-xs-12 pl0 step">
+                    <div className="col-md-4 col-sm-12 pl0 step">
                         <Icon5 className='icon-5' />
                         <h2>{t('home_page.how_it_works.step')} 5</h2>
                         {t('home_page.how_it_works.step_5')}
