@@ -485,6 +485,7 @@
     }
     .b-s-img-media {
       display: none;
+      margin-bottom: 105px !important;
     }
 
     .brush {
@@ -557,4 +558,11 @@
   -moz-box-shadow: 1.5em 1.5em 1.5em #5a616e !important;
   -webkit-box-shadow: 1.5em 1.5em 1.5em #5a616e !important;
   -khtml-box-shadow: 1.5em 1.5em 1.5em #5a616e !important;
+}
+
+.shadow-image-last {
+  box-shadow: -1.5em -1.5em 1.5em #5a616e !important;
+  -moz-box-shadow: -1.5em -1.5em 1.5em #5a616e !important;
+  -webkit-box-shadow: -1.5em -1.5em 1.5em #5a616e !important;
+  -khtml-box-shadow: -1.5em -1.5em 1.5em #5a616e !important;
 }

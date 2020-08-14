@@ -40,8 +40,8 @@ function Header(props){
                     <label htmlFor="btn-menu"></label>
                     <ul className="list-menu">
                         <li><a href="/">{t('home_page.hero.nav_menu.the_concept')}</a></li>
-                        <li><a href="/">{t('home_page.hero.nav_menu.gallery')}</a></li>
-                        <li><a href="/">{t('home_page.hero.nav_menu.prices')}</a></li>
+                        <li><a href="/gallery">{t('home_page.hero.nav_menu.gallery')}</a></li>
+                        <li><a href="/prices">{t('home_page.hero.nav_menu.prices')}</a></li>
                     </ul>
                 </nav>
             </div>

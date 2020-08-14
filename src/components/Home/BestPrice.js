@@ -42,7 +42,7 @@ function BestPrice(props){
                 <div className="img">
                     <img src={brush2} className='brush' alt="" />
                     <img src={bitmapBP2} className='b-p-img2 shadow-image' alt="" />
-                    <img src={bitmapMedia2} className='b-p-img2-media media' alt=""/>
+                    <img src={bitmapMedia2} className='b-p-img2-media media shadow-image' alt=""/>
                     <div className="img-2">
                         <img src={bitmapBP1} className='b-p-img1 shadow-image' alt="" />
                         {/* <SvgMask className='shadow-1' /> */}

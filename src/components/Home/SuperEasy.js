@@ -27,7 +27,7 @@ function SuperEasy(props){
                     <div className="col-sm-9 col-xs-12 col-md-7">
                         <img src={brush1} className= 'brush' alt=""/>
                         <img src={bitmap} className= 's-e-img shadow-image' alt=""/>
-                        <img src={bitmapMedia} className= 's-e-img-media media' alt=""/>
+                        <img src={bitmapMedia} className= 's-e-img-media media shadow-image' alt=""/>
                     </div>
                     <div className="col-sm-5 col-xs-12 descriptions">
                     <div className="title">

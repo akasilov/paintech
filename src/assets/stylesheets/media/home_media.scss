@@ -153,32 +153,32 @@
       margin-top: -70px;
       margin-bottom: 30px;
     }
-    // .step {
-    //   font-size: 16px;
-    //   line-height: 1.69;
-    //   margin-left: 15vw;
-    //   margin-top: -30px;
-    //   h2 {
-    //     width: 50vw;
-    //     margin-top: -52% !important;
-    //     font-size: 24px;
-    //     line-height: 1.17;
-    //     margin-bottom: 5px;
-    //     margin-top: -58px;
-    //   }
-    //   img {
-    //     position: relative;
-    //     left: -15vw;
-    //     width: 50px;
-    //     margin-bottom: 0;
-    //   }
-    //   .icon-1, .icon-2, .icon-3, .icon-4, .icon-5 {
-    //     margin-left: -96px;
-    //     padding: 13px;
-    //     overflow: visible;
-    //     z-index: 2;
-    //   }
-    // }
+    .step {
+      font-size: 16px;
+      line-height: 1.69;
+      margin-left: 15vw;
+      margin-top: -30px;
+      h2 {
+        width: 50vw;
+        margin-top: -52% !important;
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 5px;
+        margin-top: -58px;
+      }
+      img {
+        position: relative;
+        left: -15vw;
+        width: 50px;
+        margin-bottom: 0;
+      }
+      .icon-1, .icon-2, .icon-3, .icon-4, .icon-5 {
+        margin-left: -96px;
+        padding: 13px;
+        overflow: visible;
+        z-index: 2;
+      }
+    }
   }
   #super-easy {
     .brush {
@@ -337,6 +337,7 @@
       width: 280px;
       position: relative;
       top: 150px;
+
     }
     .img
       .shadow {
@@ -383,6 +384,8 @@
       top: 16vh;
     }
     .b-s-img-media {
+      // margin-top: 105px !important;
+//
       left: -25px;
     }
     .descriptions {
