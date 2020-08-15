@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../assets/stylesheets/application.scss'
 import Header from '../Shared/Header'
 import HowItWords from './HowItWorks'
@@ -11,6 +11,7 @@ import drop17 from '../../assets/images/drop-17@1x.png'
 
 function Home(props){
     const { t } = props;
+
     return(
         <div className="body">
             <ChatBtn t= {t}/>

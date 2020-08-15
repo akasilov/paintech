@@ -1,11 +1,11 @@
 import React from "react";
+import { useState, useEffect } from 'react';
 import Header from "../Shared/Header";
 import Footer from "../Shared/Footer";
 import ChatBtn from "../Home/ChatBtn";
 import "../../assets/stylesheets/application.scss";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-import { useState } from "react";
 
 function importAll(r) {
   let images = {};
@@ -20,8 +20,22 @@ function Gallery(props) {
     require.context("../../assets/images/", false, /\.(png|jpe?g)$/)
   );
 
+  const [loading, setLoading] = useState(true);
+
   const [isOpen, changeisOpen] = useState(false);
   const [item, setItem] = useState(images["bitmap-p-1@1x.png"]);
+
+  useEffect(() => {
+    const el = document.querySelector(".loader-container");
+    if (el) {
+        el.remove();
+        setLoading(false);
+    }
+  });
+
+  if (loading) {
+    return null;
+  }
 
   const openlightbox = (item) => {
     changeisOpen(true);

@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import { useState, useEffect } from 'react';
 import Home from './components/Home/Home'
 import Gallery from './components/Gallery/Gallery'
 import About from './components/About/About'
@@ -21,24 +20,11 @@ const TSalesCondition = withTranslation()(SalesCondition);
 const TPrices = withTranslation()(Prices);
 
 function App() {
-  const [loading, setLoading] = useState(true);
 
   const {i18n } = useTranslation();
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
   };
-
-  useEffect(() => {
-    const el = document.querySelector(".loader-container");
-    if (el) {
-        el.remove();
-        setLoading(false);
-    }
-  });
-
-  if (loading) {
-    return null;
-  }
 
   return (
         <Switch>
