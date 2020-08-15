@@ -13,13 +13,15 @@ import {
   BrowserRouter as Router,
 } from "react-router-dom";
 
+import { HashRouter } from 'react-router-dom';
+
 ReactDOM.render(
   <Suspense fallback={(<div>Loading</div>)}>
-    <Router>
+    <HashRouter>
       <ScrollToTop>
         <App useSuspense={true} />
       </ScrollToTop>
-    </Router>
+    </HashRouter>
   </Suspense>,
   document.getElementById('root')
 );

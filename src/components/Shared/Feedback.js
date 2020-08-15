@@ -1,19 +1,19 @@
 import React,{useState} from 'react'
 import SvgCloseCopy4 from "../../assets/images/CloseCopy4"
 import oval2 from '../../assets/images/oval-2-copy-7@1x.png'
-
+import Axios from 'axios'
 
 export const Success = (props) => {
     const { t } = props;
 
     return (
-      <div class="mail-form">
-        <div class="msg-success">
-          <div class="title">
+      <div className="mail-form">
+        <div className="msg-success">
+          <div className="title">
             <img src={oval2} alt="" />
-            <span class="name"> info@painted.ch </span>
+            <span className="name"> info@painted.ch </span>
           </div>
-          <div class="body">Thank you for your feedback!</div>
+          <div className="body">Thank you for your feedback!</div>
         </div>
       </div>
     );
@@ -22,6 +22,23 @@ export const Success = (props) => {
 
 export const FeedbackForm = (props) => {
     const { t } = props;
+    const [formData, setFormData] = useState({})
+
+    const updateInput = e => {
+        setFormData({
+          ...formData,
+          [e.target.name]: e.target.value,
+        })
+    }
+
+    const handleSubmit = event => {
+        event.preventDefault()
+        props.send(formData)
+        setFormData({
+          email: '',
+          comment: '',
+        })
+    }
 
     return (
         
@@ -32,6 +49,7 @@ export const FeedbackForm = (props) => {
           acceptCharset="UTF-8"
           data-remote="true"
           method="post"
+          onSubmit={handleSubmit}
         >
           <div className="msg">
             <div className="title">
@@ -52,7 +70,9 @@ export const FeedbackForm = (props) => {
                 id="feedback_email"
                 required="required"
                 type="text"
-                name="feedback[email]"
+                name="email"
+                onChange={updateInput}
+                value={formData.email || ''}
               />
               <label className="control-label" htmlFor="feedback_email">
               {t('feedbacks.form.e_mail_label')}
@@ -63,7 +83,9 @@ export const FeedbackForm = (props) => {
               <textarea
                 id="feedback_comment"
                 required="required"
-                name="feedback[comment]"
+                name="comment"
+                onChange={updateInput}
+                value={formData.comment || ''}
               ></textarea>
               <label className="control-label" htmlFor="feedback_comment">
               {t('feedbacks.form.comments_label')}
@@ -72,7 +94,7 @@ export const FeedbackForm = (props) => {
             </div>
           </div>
           <div className="button-container">
-            <button name="button" type="submit" className="button send" onClick={props.send}>
+            <button name="button" type="submit" className="button send">
               <span> {t('feedbacks.form.send')}</span>
             </button>{" "}
           </div>
@@ -84,14 +106,24 @@ function Feedback(props){
     const { t } = props;
     const [sent,isSent] = useState(false)
 
-    const sendEmail = ()=>{
-        isSent(true)
+
+    const sendEmail = (formData)=>{
+        console.log(formData)
+         isSent(true)
+        Axios.post('https://us-central1-paintedch-c26a1.cloudfunctions.net/submit',formData)
+        .then(res => {
+        })
+        .catch(error => {
+        console.log(error)
+        })
     }
 
     const close = ()=>{
         props.onClose()
         isSent(false)
     }
+
+
 
     let content=<FeedbackForm t={t} send={sendEmail}/>
     if(sent)
