@@ -40,7 +40,7 @@ function About(props) {
       <div className="row m0 top-pic">
         <div id="img" className="col-12 text-center">
           <img alt="" src={images['canvas-studio@1x.webp']} className='artist-on-work' />
-          <img alt="" src={images['canvas-studio-media@1x.png']} className='artist-on-work-media' />
+          <img alt="" src={images['canvas-studio-media_1x.webp']} className='artist-on-work-media' />
           <img alt="" src={images['brush-2@1x.png']} className='brush-2' />
           <div className="img-drops">
             <img alt="" src={images['drop-3@1x.png']} className='drop-3 no-media' />

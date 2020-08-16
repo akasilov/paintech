@@ -210,7 +210,7 @@ function Gallery(props) {
             />
             <img
               alt=""
-              src={images["brush-media-1@2x.png"]}
+              src={images["brush-media-1@2x.webp"]}
               className="brush-media-1 img brush media"
             />
           </div>
@@ -299,7 +299,7 @@ function Gallery(props) {
             />
             <img
               alt=""
-              src={images["brush-media-3@2x.png"]}
+              src={images["brush-media-3@2x.webp"]}
               className="brush-media-3 img brush media"
             />
           </div>
@@ -345,7 +345,7 @@ function Gallery(props) {
               />
               <img
                 alt=""
-                src={images["brush-media-4@2x.png"]}
+                src={images["brush-media-4@2x.webp"]}
                 className="brush-media-4 img brush media"
               />
             </div>
