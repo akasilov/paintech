@@ -34,14 +34,14 @@ function About(props) {
       <div className="row m0">
         <div id="title" className="col-12 text-center">
           {t('home_page.footer.nav_menu.about')}
-          <img alt="" src={images['brush-9@1x.png']} className='brush-title' />
+          <img alt="" src={images['brush-9@1x.webp']} className='brush-title' />
         </div>
       </div>
       <div className="row m0 top-pic">
         <div id="img" className="col-12 text-center">
           <img alt="" src={images['canvas-studio@1x.webp']} className='artist-on-work' />
           <img alt="" src={images['canvas-studio-media_1x.webp']} className='artist-on-work-media' />
-          <img alt="" src={images['brush-2@1x.png']} className='brush-2' />
+          <img alt="" src={images['brush-2@1x.webp']} className='brush-2' />
           <div className="img-drops">
             <img alt="" src={images['drop-3@1x.png']} className='drop-3 no-media' />
             <img alt="" src={images['drop-4@1x.png']} className='drop-4 no-media' />

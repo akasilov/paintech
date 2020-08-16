@@ -195,7 +195,7 @@ function Gallery(props) {
             </div>
             <img
               alt=""
-              src={images["brush-5@1x.png"]}
+              src={images["brush-5@1x.webp"]}
               className="brush-5 img brush no-media"
             />
             <img
@@ -245,7 +245,7 @@ function Gallery(props) {
             />
             <img
               alt=""
-              src={images["brush-9@1x.png"]}
+              src={images["brush-9@1x.webp"]}
               className="brush-9 img brush no-media"
             />
             <img
@@ -294,7 +294,7 @@ function Gallery(props) {
             />
             <img
               alt=""
-              src={images["brush-5@1x.png"]}
+              src={images["brush-5@1x.webp"]}
               className="brush-5-copy img brush no-media"
             />
             <img
@@ -335,17 +335,17 @@ function Gallery(props) {
               />
               <img
                 alt=""
-                src={images["brush-5@1x.png"]}
+                src={images["brush-5@1x.webp"]}
                 className="brush-5-copy brush-5-copy-2 img brush no-media"
               />
               <img
                 alt=""
-                src={images["brush-9@1x.png"]}
+                src={images["brush-9@1x.webp"]}
                 className="brush-9-copy img brush no-media"
               />
               <img
                 alt=""
-                src={images["brush-media-4@2x.webp"]}
+                src={images["brush-media-4_2x.webp"]}
                 className="brush-media-4 img brush media"
               />
             </div>
@@ -380,7 +380,7 @@ function Gallery(props) {
             />
             <img
               alt=""
-              src={images["brush-9@1x.png"]}
+              src={images["brush-9@1x.webp"]}
               className="brush-9-copy brush-9-copy-2 img brush no-media"
             />
             <img
