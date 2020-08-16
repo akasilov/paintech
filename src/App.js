@@ -4,6 +4,7 @@ import Gallery from './components/Gallery/Gallery'
 import About from './components/About/About'
 import SalesCondition from './components/SalesCondition/SalesCondition'
 import Prices from './components/Prices/Prices'
+import SPrices from './components/Prices/SPrices'
 import { useTranslation, withTranslation} from 'react-i18next';
 
 import {
@@ -18,6 +19,7 @@ const TGallery = withTranslation()(Gallery);
 const TAbout = withTranslation()(About);
 const TSalesCondition = withTranslation()(SalesCondition);
 const TPrices = withTranslation()(Prices);
+const STPrices = withTranslation()(SPrices);
 
 function App() {
 
@@ -33,6 +35,7 @@ function App() {
           <Route path="/about"><TAbout langChange={changeLanguage} /></Route>
           <Route path="/terms"><TSalesCondition langChange={changeLanguage}/></Route>
           <Route path="/prices"><TPrices langChange={changeLanguage}/></Route>
+          <Route path="/prices-success"><STPrices langChange={changeLanguage}/></Route>
         </Switch>
   );
 }

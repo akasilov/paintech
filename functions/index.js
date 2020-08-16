@@ -46,3 +46,44 @@ exports.submit = functions.https.onRequest((req, res) => {
     })
   }
 })
+
+exports.order = functions.https.onRequest((req, res) => {
+    res.set('Access-Control-Allow-Origin', '*')
+    res.set('Access-Control-Allow-Methods', 'GET, PUT, POST, OPTIONS')
+    res.set('Access-Control-Allow-Headers', '*')
+  
+    if (req.method === 'OPTIONS') {
+      res.end()
+    } else {
+      cors(req, res, () => {
+        if (req.method !== 'POST') {
+          return
+        }
+  
+        const mailOptions = {
+          from: req.body.email,
+          replyTo: req.body.email,
+          to: gmailEmail,
+          subject: `Paintedch order by ${req.body.name} `,
+          text: req.body.comment,
+          html: `
+                <p><Strong>Name:</Strong>${req.body.name}</p>
+                <p><Strong>Email:</Strong>${req.body.email}</p>
+                <p><Strong>Comments:</Strong>${req.body.comment}</p>
+                <p><Strong>Width:</Strong>${req.body.width}</p>
+                <p><Strong>Height:</Strong>${req.body.height}</p>
+                <p><Strong>Transport:</Strong>${req.body.transport}</p>
+                <p>${req.body.picture}</p>
+          `,
+        }
+  
+        return mailTransport.sendMail(mailOptions).then(() => {
+          console.log('New email sent to:', gmailEmail)
+          res.status(200).send({
+            isEmailSend: true
+          })
+          return
+        })
+      })
+    }
+  })
