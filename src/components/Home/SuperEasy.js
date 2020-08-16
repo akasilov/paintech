@@ -7,7 +7,7 @@ import drop10 from "../../assets/images/drop-10@1x.png";
 import drop11 from "../../assets/images/drop-11@1x.png";
 import brush1 from "../../assets/images/brush-1@1x.webp";
 import bitmap from "../../assets/images/bitmap_s_e@1x.webp";
-import bitmapMedia from "../../assets/images/bitmap-media-1@1x.png";
+import bitmapMedia from "../../assets/images/bitmap-media-1@1x.webp";
 import "../../assets/stylesheets/application.scss";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

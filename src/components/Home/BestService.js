@@ -4,7 +4,7 @@ import drop14 from '../../assets/images/drop-14@1x.png'
 //import drop15 from '../../assets/images/drop-15@1x.png'
 import brush3 from '../../assets/images/brush-3@1x.png'
 import bitmapBS from '../../assets/images/bitmap_b_s@1x.webp'
-import bitmapMedia from '../../assets/images/bitmap-media-3@1x.png'
+import bitmapMedia from '../../assets/images/bitmap-media-3@1x.webp'
 import SvgMaskCopy3 from '../../assets/images/MaskCopy3'
 import '../../assets/stylesheets/application.scss'
 

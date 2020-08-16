@@ -17,7 +17,7 @@ function importAll(r) {
 function Prices(props) {
 
     const images = importAll(
-      require.context("../../assets/images/", false, /\.(png|jpe?g)$/)
+      require.context("../../assets/images/", false, /\.(png|jpe?g|webp)$/)
     );
 
     const [sent, isSent] = useState(false)
@@ -155,7 +155,7 @@ function Prices(props) {
                 method="post"
                 onSubmit={handleSubmit}>
                 <div className="image">
-                  <img src={images["image@1x.png"]} alt="" className="image-1" />
+                  <img src={images["image@1x.webp"]} alt="" className="image-1" />
                 </div>
 
                 <div className="which-size-would-you">
@@ -209,7 +209,7 @@ function Prices(props) {
                 </div>
 
                 <div className="sofa">
-                  <img src={images["sofa@1x.png"]} alt="" className="sofa-1" />
+                  <img src={images["sofa@1x.webp"]} alt="" className="sofa-1" />
                   <hr className="line-under-sofa" />
                   <span className="text-size-sofa">200 cm</span>
                 </div>
