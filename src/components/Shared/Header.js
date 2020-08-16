@@ -39,9 +39,9 @@ function Header(props){
                     <input type="checkbox" id="btn-menu" />
                     <label htmlFor="btn-menu"></label>
                     <ul className="list-menu">
-                        <li><a href="/">{t('home_page.hero.nav_menu.the_concept')}</a></li>
-                        <li><a href="/gallery">{t('home_page.hero.nav_menu.gallery')}</a></li>
-                        <li><a href="/prices">{t('home_page.hero.nav_menu.prices')}</a></li>
+                        <li><Link to="/">{t('home_page.hero.nav_menu.the_concept')}</Link></li>
+                        <li><Link to="/gallery">{t('home_page.hero.nav_menu.gallery')}</Link></li>
+                        <li><Link to="/prices">{t('home_page.hero.nav_menu.prices')}</Link></li>
                     </ul>
                 </nav>
             </div>

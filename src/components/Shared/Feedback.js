@@ -69,7 +69,7 @@ export const FeedbackForm = (props) => {
               <input
                 id="feedback_email"
                 required="required"
-                type="text"
+                type="email"
                 name="email"
                 onChange={updateInput}
                 value={formData.email || ''}
