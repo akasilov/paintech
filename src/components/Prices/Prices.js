@@ -15,10 +15,10 @@ function importAll(r) {
 
 
 function Prices(props) {
-  
+
     const images = importAll(
       require.context("../../assets/images/", false, /\.(png|jpe?g)$/)
-    );  
+    );
 
     const [sent, isSent] = useState(false)
     const [formData, setFormData] = useState({
@@ -151,7 +151,7 @@ function Prices(props) {
                 <p>{t("order.remember")}</p>
               </div>
 
-              <form 
+              <form
                 method="post"
                 onSubmit={handleSubmit}>
                 <div className="image">
@@ -295,7 +295,7 @@ function Prices(props) {
                   />
                 </div>
                 <hr className="line-info" />
-              
+
                 <div id="error_explanation">
                   <h3></h3>
                   <ul>

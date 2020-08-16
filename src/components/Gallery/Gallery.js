@@ -17,11 +17,11 @@ function importAll(r) {
 
 function Gallery(props) {
   const images = importAll(
-    require.context("../../assets/images/", false, /\.(png|jpe?g)$/)
+    require.context("../../assets/images/", false, /\.(png|jpe?g|webp)$/)
   );
 
   const [isOpen, changeisOpen] = useState(false);
-  const [item, setItem] = useState(images["bitmap-p-1@1x.png"]);
+  const [item, setItem] = useState(images["bitmap-p-1@1x.webp"]);
 
   const openlightbox = (item) => {
     changeisOpen(true);
@@ -164,7 +164,7 @@ function Gallery(props) {
             <p className="title-gal">{t("home_page.hero.nav_menu.gallery")}</p>
             <img
               alt=""
-              src={images["brush-4@1x.png"]}
+              src={images["brush-4@1x.webp"]}
               className="brush-title img"
             />
           </div>
@@ -174,23 +174,23 @@ function Gallery(props) {
             <div className="grow pic pic-1">
               <img
                 alt=""
-                src={images["bitmap-p-1@1x.png"]}
-                onClick={() => openlightbox(images["bitmap-p-1@1x.png"])}
+                src={images["bitmap-p-1@1x.webp"]}
+                onClick={() => openlightbox(images["bitmap-p-1@1x.webp"])}
               />
             </div>
 
             <div className="grow pic pic-2">
               <img
                 alt=""
-                src={images["bitmap-p-2@1x.png"]}
-                onClick={() => openlightbox(images["bitmap-p-2@1x.png"])}
+                src={images["bitmap-p-2@1x.webp"]}
+                onClick={() => openlightbox(images["bitmap-p-2@1x.webp"])}
               />
             </div>
             <div className="grow pic pic-3">
               <img
                 alt=""
-                src={images["bitmap-p-3@1x.png"]}
-                onClick={() => openlightbox(images["bitmap-p-3@1x.png"])}
+                src={images["bitmap-p-3@1x.webp"]}
+                onClick={() => openlightbox(images["bitmap-p-3@1x.webp"])}
               />
             </div>
             <img
@@ -200,12 +200,12 @@ function Gallery(props) {
             />
             <img
               alt=""
-              src={images["brush-6@1x.png"]}
+              src={images["brush-6@1x.webp"]}
               className="brush-6 img brush no-media"
             />
             <img
               alt=""
-              src={images["brush-7@1x.png"]}
+              src={images["brush-7@1x.webp"]}
               className="brush-7 img brush no-media"
             />
             <img
@@ -220,27 +220,27 @@ function Gallery(props) {
             <div className="grow pic pic-1">
               <img
                 alt=""
-                src={images["bitmap-p-p-1@1x.png"]}
-                onClick={() => openlightbox(images["bitmap-p-p-1@1x.png"])}
+                src={images["bitmap-p-p-1@1x.webp"]}
+                onClick={() => openlightbox(images["bitmap-p-p-1@1x.webp"])}
               />
             </div>
             <div className="grow pic pic-2">
               <img
                 alt=""
-                src={images["bitmap-p-p-2@1x.png"]}
-                onClick={() => openlightbox(images["bitmap-p-p-2@1x.png"])}
+                src={images["bitmap-p-p-2@1x.webp"]}
+                onClick={() => openlightbox(images["bitmap-p-p-2@1x.webp"])}
               />
             </div>
             <div className="grow pic pic-3">
               <img
                 alt=""
-                src={images["bitmap-p-p-3@1x.png"]}
-                onClick={() => openlightbox(images["bitmap-p-p-3@1x.png"])}
+                src={images["bitmap-p-p-3@1x.webp"]}
+                onClick={() => openlightbox(images["bitmap-p-p-3@1x.webp"])}
               />
             </div>
             <img
               alt=""
-              src={images["brush-8@1x.png"]}
+              src={images["brush-8@1x.webp"]}
               className="brush-8 img brush no-media"
             />
             <img
@@ -255,7 +255,7 @@ function Gallery(props) {
             />
             <img
               alt=""
-              src={images["brush-media-2@2x.png"]}
+              src={images["brush-media-2@2x.webp"]}
               className="brush-media-2 img brush media"
             />
           </div>
@@ -278,18 +278,18 @@ function Gallery(props) {
             <div className="grow pic pic-3">
               <img
                 alt=""
-                src={images["bitmap-m-a-3@1x.jpg"]}
-                onClick={() => openlightbox(images["bitmap-m-a-3@1x.jpg"])}
+                src={images["bitmap-m-a-3@1x.webp"]}
+                onClick={() => openlightbox(images["bitmap-m-a-3@1x.webp"])}
               />
             </div>
             <img
               alt=""
-              src={images["brush-7@1x.png"]}
+              src={images["brush-7@1x.webps"]}
               className="brush-7-copy img brush no-media"
             />
             <img
               alt=""
-              src={images["brush-6@1x.png"]}
+              src={images["brush-6@1x.webp"]}
               className="brush-6-copy img brush no-media"
             />
             <img
@@ -310,27 +310,27 @@ function Gallery(props) {
               <div className="grow pic pic-1">
                 <img
                   alt=""
-                  src={images["bitmap-l-u-1@1x.png"]}
-                  onClick={() => openlightbox(images["bitmap-l-u-1@1x.png"])}
+                  src={images["bitmap-l-u-1@1x.webp"]}
+                  onClick={() => openlightbox(images["bitmap-l-u-1@1x.webp"])}
                 />
               </div>
               <div className="grow pic pic-2">
                 <img
                   alt=""
-                  src={images["bitmap-l-u-2@1x.png"]}
-                  onClick={() => openlightbox(images["bitmap-l-u-2@1x.png"])}
+                  src={images["bitmap-l-u-2@1x.webp"]}
+                  onClick={() => openlightbox(images["bitmap-l-u-2@1x.webp"])}
                 />
               </div>
               <div className="grow pic pic-3">
                 <img
                   alt=""
-                  src={images["bitmap-l-u-3@1x.png"]}
-                  onClick={() => openlightbox(images["bitmap-l-u-3@1x.png"])}
+                  src={images["bitmap-l-u-3@1x.webp"]}
+                  onClick={() => openlightbox(images["bitmap-l-u-3@1x.webp"])}
                 />
               </div>
               <img
                 alt=""
-                src={images["brush-8@1x.png"]}
+                src={images["brush-8@1x.webp"]}
                 className="brush-8 img brush no-media"
               />
               <img
@@ -355,22 +355,22 @@ function Gallery(props) {
             <div className="grow pic pic-1">
               <img
                 alt=""
-                src={images["bitmap-a-a-1@1x.png"]}
-                onClick={() => openlightbox(images["bitmap-a-a-1@1x.png"])}
+                src={images["bitmap-a-a-1@1x.webp"]}
+                onClick={() => openlightbox(images["bitmap-a-a-1@1x.webp"])}
               />
             </div>
             <div className="grow pic pic-2">
               <img
                 alt=""
-                src={images["bitmap-a-a-2@1x.png"]}
-                onClick={() => openlightbox(images["bitmap-a-a-2@1x.png"])}
+                src={images["bitmap-a-a-2@1x.webp"]}
+                onClick={() => openlightbox(images["bitmap-a-a-2@1x.webp"])}
               />
             </div>
             <div className="grow pic pic-3">
               <img
                 alt=""
-                src={images["bitmap-a-a-3@1x.png"]}
-                onClick={() => openlightbox(images["bitmap-a-a-3@1x.png"])}
+                src={images["bitmap-a-a-3@1x.webp"]}
+                onClick={() => openlightbox(images["bitmap-a-a-3@1x.webp"])}
               />
             </div>
             <img
@@ -385,7 +385,7 @@ function Gallery(props) {
             />
             <img
               alt=""
-              src={images["brush-8@1x.png"]}
+              src={images["brush-8@1x.webp"]}
               className="brush-8-copy img brush no-media"
             />
             <img

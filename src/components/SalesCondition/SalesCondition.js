@@ -40,7 +40,7 @@ function SalesCondition(props) {
     <div className="col-10 offset-1 text-center">
       <div className="title">
        <div className="title-text">{t('terms_conditions.title')}</div>
-        <img src={images['brush-1@1x.png']} alt="" className= 'brush-1' />
+        <img src={images['brush-1@1x.webp']} alt="" className= 'brush-1' />
       </div>
     </div>
   </div>
