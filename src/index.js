@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.css';	
+import 'bootstrap/dist/css/bootstrap.css';
 // import './fonts/RobotoSlab-Light.ttf'
 // import './fonts/Montserrat-Regular.ttf'
 // import './fonts/HKGrotesk-Regular.ttf'

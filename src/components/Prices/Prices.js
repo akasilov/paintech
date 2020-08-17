@@ -9,6 +9,7 @@ import SPrices from './SPrices'
 function importAll(r) {
     let images = {};
     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    console.log('importing pictures..');
     return images;
 }
 
@@ -58,7 +59,6 @@ function Prices(props) {
     }
 
     const fileChangedHandler = e => {
-      // e.preventDefault();
       console.log(e.target.name)
       let file = e.target.files[0];
       let reader = new FileReader();
