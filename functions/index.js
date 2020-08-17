@@ -1,6 +1,5 @@
 const functions = require('firebase-functions')
 const nodemailer = require('nodemailer')
-const inlineBase64 = require('nodemailer-plugin-inline-base64');
 const cors = require('cors')({
   origin: true
 })
@@ -93,6 +92,7 @@ exports.order = functions.https.onRequest((req, res) => {
                 <p><Strong>Width:</Strong>${req.body.width}</p>
                 <p><Strong>Height:</Strong>${req.body.height}</p>
                 <p><Strong>Transport:</Strong>${req.body.transport}</p>
+                <p><Strong>Estimated Price (CHF ):</Strong>${req.body.estimate}</p>
                 
           `,
         //   <img src=data:image/png;base64,${req.body.picture} />
@@ -105,7 +105,6 @@ exports.order = functions.https.onRequest((req, res) => {
           ]
         }
   
-        mailTransport.use('compile', inlineBase64())
         return mailTransport.sendMail(mailOptions).then(() => {
           console.log('New email sent to:', gmailEmail)
           res.status(200).send({

@@ -53,6 +53,7 @@ function Prices(props) {
       setFormData({
         ...formData,
         [e.target.name]: e.target.value,
+        "estimate":  Math.round(prices[formData['widthIndex']][formData['heightIndex']] + ( (0.1 * prices[formData['widthIndex']][formData['heightIndex']])*(formData['transport'] !== "normal"))),
       })
     }
 
@@ -298,7 +299,7 @@ function Prices(props) {
 
                 <div className="we-estimate">{t("order.order_at.title")}</div>
                 <div className="chf">
-                  <span id="calculatedPrice">{prices[formData['widthIndex']][formData['heightIndex']] + ( (0.1 * prices[formData['widthIndex']][formData['heightIndex']])*(formData['transport'] !== "normal")) }
+                  <span id="calculatedPrice">{ Math.round(prices[formData['widthIndex']][formData['heightIndex']] + ( (0.1 * prices[formData['widthIndex']][formData['heightIndex']])*(formData['transport'] !== "normal")))}
                   </span> CHF
                 </div>
                 <div className="click-below">{t("order.order_at.sub")}</div>
