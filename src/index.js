@@ -17,11 +17,11 @@ import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <Suspense fallback={(<div>Loading</div>)}>
-    <HashRouter>
+    <Router>
       <ScrollToTop>
         <App useSuspense={true} />
       </ScrollToTop>
-    </HashRouter>
+    </Router>
   </Suspense>,
   document.getElementById('root')
 );

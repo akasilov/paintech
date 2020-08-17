@@ -18,9 +18,9 @@ function SPrices(props) {
       <div className="body">
         <ChatBtn t={t} />
         <Header t={t} route="prices" />
-        <div class="container-fluid">
-          <div class="col-9 offset-2">
-            <div class="msg-success">
+        <div className="container-fluid">
+          <div className="col-9 offset-2">
+            <div className="msg-success">
               <p>
                 Thank You for your request, we will contact you very soon with a
                 price offer

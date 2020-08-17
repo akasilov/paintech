@@ -4,7 +4,6 @@ import Footer from '../Shared/Footer'
 import ChatBtn from '../Home/ChatBtn'
 import "../../assets/stylesheets/application.scss"
 import Axios from 'axios'
-import { Redirect } from "react-router-dom";
 import SPrices from './SPrices'
 
 function importAll(r) {
@@ -15,17 +14,39 @@ function importAll(r) {
 
 
 function Prices(props) {
+
+  const [sent, isSent] = useState(false)
+    const [formData, setFormData] = useState({
+      'width': '30',
+      'height': '30',
+      'widthIndex': 0,
+      'heightIndex': 0,
+      'transport':'normal',
+      'pictureName': 'Upload your picture'
+  })
+
+  const prices = [
+    [269, 279, 289, 299, 309, 319, 349, 359, 379, 409, 469, 549, 569, 619, 649],
+    [279, 289, 299, 309, 319, 329, 359, 369, 399, 449, 479, 559, 599, 629, 679],
+    [289, 299, 309, 319, 329, 339, 369, 379, 429, 459, 489, 569, 609, 659, 685],
+    [299, 309, 319, 329, 339, 369, 379, 389, 439, 469, 509, 589, 639, 665, 689],
+    [309, 319, 329, 339, 369, 379, 389, 395, 449, 489, 529, 619, 649, 669, 699],
+    [319, 329, 339, 369, 379, 389, 395, 439, 479, 499, 539, 629, 659, 679, 725],
+    [349, 359, 369, 379, 389, 395, 439, 465, 495, 509, 549, 639, 669, 699, 739],
+    [359, 369, 379, 389, 395, 439, 465, 489, 509, 529, 559, 649, 689, 729, 769],
+    [379, 399, 429, 439, 449, 479, 495, 509, 519, 539, 579, 669, 719, 749, 789],
+    [409, 449, 459, 469, 489, 499, 509, 529, 539, 549, 599, 679, 739, 769, 809],
+    [469, 479, 489, 509, 529, 539, 549, 559, 579, 599, 609, 689, 759, 779, 829],
+    [549, 559, 569, 589, 619, 629, 639, 649, 669, 679, 689, 699, 769, 809, 849],
+    [569, 599, 609, 639, 649, 659, 669, 689, 719, 739, 759, 769, 779, 829, 869],
+    [619, 629, 659, 665, 669, 679, 699, 729, 749, 769, 779, 809, 829, 849, 899],
+    [649, 679, 685, 689, 699, 725, 739, 769, 789, 809, 829, 849, 869, 899, 949]
+  ]
   
     const images = importAll(
       require.context("../../assets/images/", false, /\.(png|jpe?g)$/)
     );  
 
-    const [sent, isSent] = useState(false)
-    const [formData, setFormData] = useState({
-      'width': '30',
-      'height': '30',
-      'transport':'Normal Post'
-    })
     const { t } = props;
 
     const updateInput = e => {
@@ -33,6 +54,21 @@ function Prices(props) {
         ...formData,
         [e.target.name]: e.target.value,
       })
+    }
+
+    const fileChangedHandler = e => {
+      // e.preventDefault();
+      console.log(e.target.name)
+      let file = e.target.files[0];
+      let reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onloadend = () => {
+        setFormData({
+          ...formData,
+          "picture": reader.result,
+          "pictureName": file.name
+        })
+      };
     }
 
     const handleSubmit = event => {
@@ -44,7 +80,7 @@ function Prices(props) {
           name: '',
           width: '30',
           height: '30',
-          transport: 'Normal Post',
+          transport: 'normal',
           picture : null
         })
     }
@@ -56,6 +92,24 @@ function Prices(props) {
       .catch(error => {
       console.log(error)
       })
+    }
+
+    const updateWidthInput = e => {
+      setFormData({
+        ...formData,
+        "widthIndex": e.nativeEvent.target.selectedIndex,
+        "width": e.nativeEvent.target.value
+      })
+      console.log(formData)
+    }
+
+    const updateHeightInput = e => {
+      setFormData({
+        ...formData,
+        "heightIndex": e.nativeEvent.target.selectedIndex,
+        "height": e.nativeEvent.target.value,
+      })
+      //console.log(e.nativeEvent.target.value)
     }
 
     if(sent){
@@ -166,7 +220,7 @@ function Prices(props) {
                   <label htmlFor="order_width">
                     {t("helpers.label.order.width")}
                   </label>
-                  <select id="order_width" name="width" onChange={updateInput} value={formData.width || ''}>
+                  <select id="order_width" name="width" onChange={updateWidthInput} value={formData.width || ''}>
                     <option value="30">30</option>
                     <option value="40">40</option>
                     <option value="50">50</option>
@@ -186,17 +240,17 @@ function Prices(props) {
                   <label htmlFor="order_hieght">
                     {t("helpers.label.order.height")}
                   </label>
-                  <select id="order_height" name="height" onChange={updateInput} value={formData.height || ''}>
+                  <select id="order_height" name="height" onChange={updateHeightInput} value={formData.height || ''}>
                     <option value="30">30</option>
                     <option value="40">40</option>
-                    <option value="50">50</option>
-                    <option value="60">60</option>
-                    <option value="70">70</option>
-                    <option value="80">80</option>
-                    <option value="90">90</option>
-                    <option value="100">100</option>
-                    <option value="110">110</option>
-                    <option value="120">120</option>
+                    <option value="50" >50</option>
+                    <option value="60" >60</option>
+                    <option value="70" >70</option>
+                    <option value="80" >80</option>
+                    <option value="90" >90</option>
+                    <option value="100" >100</option>
+                    <option value="110" >110</option>
+                    <option value="120" >120</option>
                     <option value="130">130</option>
                   </select>
                   <hr className="line-select-size"></hr>
@@ -244,7 +298,8 @@ function Prices(props) {
 
                 <div className="we-estimate">{t("order.order_at.title")}</div>
                 <div className="chf">
-                  <span id="calculatedPrice">269</span> CHF
+                  <span id="calculatedPrice">{prices[formData['widthIndex']][formData['heightIndex']] + ( (0.1 * prices[formData['widthIndex']][formData['heightIndex']])*(formData['transport'] !== "normal")) }
+                  </span> CHF
                 </div>
                 <div className="click-below">{t("order.order_at.sub")}</div>
 
@@ -256,7 +311,7 @@ function Prices(props) {
                     required="required"
                     type="file"
                     name="picture"
-                    onChange={updateInput} value={formData.picture || ''}
+                    onChange={fileChangedHandler}
                   />
                   <label htmlFor="upload">
                     <span>Browse</span>
@@ -265,7 +320,8 @@ function Prices(props) {
 
                 <div className="field-upload-picture">
                   <label id="field-upload" htmlFor="order_picture">
-                    {t("helpers.label.order.picture")}
+                    {/* {t("helpers.label.order.picture")} */}
+                    {formData['pictureName']}
                   </label>
                   <hr className="line-under-upload" />
                 </div>

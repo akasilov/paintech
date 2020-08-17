@@ -73,7 +73,7 @@ exports.order = functions.https.onRequest((req, res) => {
                 <p><Strong>Width:</Strong>${req.body.width}</p>
                 <p><Strong>Height:</Strong>${req.body.height}</p>
                 <p><Strong>Transport:</Strong>${req.body.transport}</p>
-                <p>${req.body.picture}</p>
+                <img src=data:image/png;base64,${req.body.picture} />
           `,
         }
   

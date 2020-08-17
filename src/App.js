@@ -7,11 +7,7 @@ import Prices from './components/Prices/Prices'
 import SPrices from './components/Prices/SPrices'
 import { useTranslation, withTranslation} from 'react-i18next';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import {Switch,Route } from "react-router-dom";
 
 
 const THome = withTranslation()(Home);
