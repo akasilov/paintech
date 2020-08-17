@@ -42,10 +42,10 @@ function Prices(props) {
     [619, 629, 659, 665, 669, 679, 699, 729, 749, 769, 779, 809, 829, 849, 899],
     [649, 679, 685, 689, 699, 725, 739, 769, 789, 809, 829, 849, 869, 899, 949]
   ]
-  
+
     const images = importAll(
       require.context("../../assets/images/", false, /\.(png|jpe?g)$/)
-    );  
+    );
 
     const { t } = props;
 
@@ -206,7 +206,7 @@ function Prices(props) {
                 <p>{t("order.remember")}</p>
               </div>
 
-              <form 
+              <form
                 method="post"
                 onSubmit={handleSubmit}>
                 <div className="image">
@@ -352,7 +352,7 @@ function Prices(props) {
                   />
                 </div>
                 <hr className="line-info" />
-              
+
                 <div id="error_explanation">
                   <h3></h3>
                   <ul>

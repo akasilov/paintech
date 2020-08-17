@@ -16,8 +16,7 @@ function Header(props){
         i18n.changeLanguage(lng);
 
     };
-
-    console.log(i18n.language)
+    console.log('lan',i18n)
 
     return (
         <div id="header" className={`clearfix ${props.route==="home"?"home-header":""}`}>
@@ -26,9 +25,9 @@ function Header(props){
             </div>
             <div>
             <div id="lg-group" className="no-media">
-                <div className={`lg-btn ${i18n.language==='de' || (i18n.language!=='de' && i18n.language!=='fr' && i18n.language!=='en')   ?'active':""}`}><div onClick={() => changeLanguage('de')}>De</div></div>
-                <div className={`lg-btn ${i18n.language==='en'?'active':""}`}><div onClick={() => changeLanguage('en')}>En</div></div>
+                <div className={`lg-btn ${i18n.language==='en' || i18n.language === 'en-GB' ?'active':""}`}><div onClick={() => changeLanguage('en')}>En</div></div>
                 <div className={`lg-btn ${i18n.language==='fr'?'active':""}`}><div  onClick={() => changeLanguage('fr')}>Fr</div></div>
+                <div className={`lg-btn ${i18n.language==='de'?'active':""}`}><div onClick={() => changeLanguage('de')}>De</div></div>
             </div>
             </div>
             <ul className="nav-menu">
