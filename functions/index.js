@@ -1,10 +1,14 @@
 const functions = require('firebase-functions')
 const nodemailer = require('nodemailer')
+const inlineBase64 = require('nodemailer-plugin-inline-base64');
 const cors = require('cors')({
   origin: true
 })
 const gmailEmail = functions.config().gmail.email
 const gmailPassword = functions.config().gmail.password
+
+// const gmailEmail = 'paintedch7@gmail.com'
+// const gmailPassword = 'X4Kv4tgPjv'
 
 const mailTransport = nodemailer.createTransport({
   service: 'gmail',
@@ -52,6 +56,7 @@ exports.order = functions.https.onRequest((req, res) => {
     res.set('Access-Control-Allow-Methods', 'GET, PUT, POST, OPTIONS')
     res.set('Access-Control-Allow-Headers', '*')
   
+
     if (req.method === 'OPTIONS') {
       res.end()
     } else {
@@ -59,7 +64,22 @@ exports.order = functions.https.onRequest((req, res) => {
         if (req.method !== 'POST') {
           return
         }
-  
+
+
+        let picName="picture.jpg"
+        let pic = req.body.picture.split("data:image/jpg;base64,")[1]
+
+        if (req.body.picture.includes("png;base64")) {
+            picName="picture.png"
+            pic =req.body.picture.split("data:image/png;base64,")[1]
+        }
+
+        if (req.body.picture.includes("jpeg;base64")) {
+            picName="picture.jpeg"
+            pic =req.body.picture.split("data:image/jpeg;base64,")[1]
+        }
+
+
         const mailOptions = {
           from: req.body.email,
           replyTo: req.body.email,
@@ -73,10 +93,19 @@ exports.order = functions.https.onRequest((req, res) => {
                 <p><Strong>Width:</Strong>${req.body.width}</p>
                 <p><Strong>Height:</Strong>${req.body.height}</p>
                 <p><Strong>Transport:</Strong>${req.body.transport}</p>
-                <img src=data:image/png;base64,${req.body.picture} />
+                
           `,
+        //   <img src=data:image/png;base64,${req.body.picture} />
+          attachments: [
+            {   // encoded string as an attachment
+              filename: picName,
+              content: pic,
+              encoding: 'base64'
+            }
+          ]
         }
   
+        mailTransport.use('compile', inlineBase64())
         return mailTransport.sendMail(mailOptions).then(() => {
           console.log('New email sent to:', gmailEmail)
           res.status(200).send({
