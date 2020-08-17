@@ -17,6 +17,8 @@ function Header(props){
 
     };
 
+    console.log(i18n.language)
+
     return (
         <div id="header" className={`clearfix ${props.route==="home"?"home-header":""}`}>
             <div className="logo">
@@ -24,7 +26,7 @@ function Header(props){
             </div>
             <div>
             <div id="lg-group" className="no-media">
-                <div className={`lg-btn ${i18n.language==='de'?'active':""}`}><div onClick={() => changeLanguage('de')}>De</div></div>
+                <div className={`lg-btn ${i18n.language==='de' || (i18n.language!=='de' && i18n.language!=='fr' && i18n.language!=='en')   ?'active':""}`}><div onClick={() => changeLanguage('de')}>De</div></div>
                 <div className={`lg-btn ${i18n.language==='en'?'active':""}`}><div onClick={() => changeLanguage('en')}>En</div></div>
                 <div className={`lg-btn ${i18n.language==='fr'?'active':""}`}><div  onClick={() => changeLanguage('fr')}>Fr</div></div>
             </div>
