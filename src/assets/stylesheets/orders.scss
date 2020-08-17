@@ -8,6 +8,31 @@
 }
 
 .orders {
+
+  @media only screen and (max-width: 1100px) {
+    .drop-18-2 {
+      margin-left: -10% !important;
+    }
+  }
+  @media only screen and (max-width: 890px) and (min-width: 750px) {
+    .drop-18-2 {
+      margin-left: -10% !important;
+
+    }
+  }
+  @media only screen and (max-width: 750px) and (min-width: 700px) {
+    .drop-18-2 {
+      margin-left: -10% !important;
+    }
+  }
+
+  @media only screen and (max-width: 325px) {
+    .drop-18-2  {
+      margin-left: -10% !important;
+    }
+  }
+
+
   background-color: $body-bg;
   margin-left: -8vw;
   max-width: 130%;
@@ -53,6 +78,7 @@
       position: absolute;
       top: 800px;
       left: -13%;
+      margin-left:-10%;
       mix-blend-mode: multiply;
     }
     .drop-10-bottom {

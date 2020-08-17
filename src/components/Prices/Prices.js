@@ -9,6 +9,7 @@ import SPrices from './SPrices'
 function importAll(r) {
     let images = {};
     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    console.log('importing pictures..');
     return images;
 }
 
@@ -42,10 +43,10 @@ function Prices(props) {
     [619, 629, 659, 665, 669, 679, 699, 729, 749, 769, 779, 809, 829, 849, 899],
     [649, 679, 685, 689, 699, 725, 739, 769, 789, 809, 829, 849, 869, 899, 949]
   ]
-  
+
     const images = importAll(
       require.context("../../assets/images/", false, /\.(png|jpe?g)$/)
-    );  
+    );
 
     const { t } = props;
 
@@ -58,7 +59,6 @@ function Prices(props) {
     }
 
     const fileChangedHandler = e => {
-      // e.preventDefault();
       console.log(e.target.name)
       let file = e.target.files[0];
       let reader = new FileReader();
@@ -206,7 +206,7 @@ function Prices(props) {
                 <p>{t("order.remember")}</p>
               </div>
 
-              <form 
+              <form
                 method="post"
                 onSubmit={handleSubmit}>
                 <div className="image">
@@ -352,7 +352,7 @@ function Prices(props) {
                   />
                 </div>
                 <hr className="line-info" />
-              
+
                 <div id="error_explanation">
                   <h3></h3>
                   <ul>

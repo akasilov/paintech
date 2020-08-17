@@ -1,28 +1,28 @@
 import React,{useState} from 'react';
 import SvgLogo from '../../assets/images/Logo'
+import SvgLogo2 from '../../assets/images/logo.svg'
+import Image from 'react-bootstrap/Image'
+
 import '../../assets/stylesheets/application.scss'
 import {
     Link
 } from "react-router-dom";
 import { useTranslation} from 'react-i18next';
 
-
 function Header(props){
     const { t } = props;
-    //const [lang,langChange] = useState(langChange('en'))
 
     const {i18n } = useTranslation();
     const changeLanguage = lng => {
         i18n.changeLanguage(lng);
-
     };
-
-    console.log(i18n.language)
 
     return (
         <div id="header" className={`clearfix ${props.route==="home"?"home-header":""}`}>
             <div className="logo">
-                <a href="/"><SvgLogo/></a>
+                <Link to="/">
+                    <Image src={SvgLogo2}  to="/"/>
+                </Link>
             </div>
             <div>
             <div id="lg-group" className="no-media">
