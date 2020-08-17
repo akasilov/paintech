@@ -290,7 +290,7 @@ function Prices(props) {
                 <div className="field-comment">
                   <textarea
                     id="order_comment"
-                    placeholder="Additional comments"
+                    placeholder= {t("order.comment.placeholder")}
                     name="comment"
                     onChange={updateInput} value={formData.comment || ''}
                   ></textarea>
@@ -330,7 +330,7 @@ function Prices(props) {
                 <div className="field-info">
                   <input
                     id="order_name"
-                    placeholder="My Name"
+                    placeholder={t("order.name.placeholder")}
                     className="order"
                     required="required"
                     type="text"
@@ -343,7 +343,7 @@ function Prices(props) {
                 <div className="field-info">
                   <input
                     id="order_email"
-                    placeholder="My Email"
+                    placeholder={t("order.email.placeholder")}
                     className="order"
                     required="required"
                     type="email"
@@ -361,7 +361,7 @@ function Prices(props) {
                 </div>
 
                 <div className="actions">
-                  <input type="submit" value="Get an offer today"/>
+                  <input type="submit" value={t("order.submit")}/>
                 </div>
               </form>
             </div>
