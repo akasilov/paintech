@@ -1,5 +1,4 @@
-import React,{useState} from 'react';
-import SvgLogo from '../../assets/images/Logo'
+import React from 'react';
 import SvgLogo2 from '../../assets/images/logo.svg'
 import Image from 'react-bootstrap/Image'
 
@@ -13,9 +12,19 @@ function Header(props){
     const { t } = props;
 
     const {i18n } = useTranslation();
+
+    if (localStorage.getItem('userSelected') && i18n.language !== localStorage.getItem('userSelected')) {
+        i18n.changeLanguage(localStorage.getItem('userSelected'));
+    }
+
     const changeLanguage = lng => {
+        localStorage.setItem('userSelected', lng);
         i18n.changeLanguage(lng);
     };
+
+    if (!localStorage.getItem('userSelected')) {
+        changeLanguage('de');
+    }
 
     return (
         <div id="header" className={`clearfix ${props.route==="home"?"home-header":""}`}>
@@ -27,8 +36,8 @@ function Header(props){
             <div>
             <div id="lg-group" className="no-media">
                 <div className={`lg-btn ${i18n.language.slice(0,2)==='de'?'active':""}`}><div onClick={() => changeLanguage('de')}>De</div></div>
-                <div className={`lg-btn ${i18n.language.slice(0,2)==='en'?'active':""}`}><div onClick={() => changeLanguage('en')}>En</div></div>
-                <div className={`lg-btn ${i18n.language.slice(0,2)==='fr'?'active':""}`}><div  onClick={() => changeLanguage('fr')}>Fr</div></div>
+                <div className={`lg-btn ${i18n.language ==='en'?'active':""}`}><div onClick={() => changeLanguage('en')}>En</div></div>
+                <div className={`lg-btn ${i18n.language ==='fr'?'active':""}`}><div  onClick={() => changeLanguage('fr')}>Fr</div></div>
             </div>
             </div>
             <ul className="nav-menu">

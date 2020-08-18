@@ -6,9 +6,6 @@ const cors = require('cors')({
 const gmailEmail = functions.config().gmail.email
 const gmailPassword = functions.config().gmail.password
 
-// const gmailEmail = 'paintedch7@gmail.com'
-// const gmailPassword = 'X4Kv4tgPjv'
-
 const mailTransport = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -54,7 +51,7 @@ exports.order = functions.https.onRequest((req, res) => {
     res.set('Access-Control-Allow-Origin', '*')
     res.set('Access-Control-Allow-Methods', 'GET, PUT, POST, OPTIONS')
     res.set('Access-Control-Allow-Headers', '*')
-  
+
 
     if (req.method === 'OPTIONS') {
       res.end()
@@ -93,7 +90,7 @@ exports.order = functions.https.onRequest((req, res) => {
                 <p><Strong>Height:</Strong>${req.body.height}</p>
                 <p><Strong>Transport:</Strong>${req.body.transport}</p>
                 <p><Strong>Estimated Price (CHF ):</Strong>${req.body.estimate}</p>
-                
+
           `,
         //   <img src=data:image/png;base64,${req.body.picture} />
           attachments: [
@@ -104,7 +101,7 @@ exports.order = functions.https.onRequest((req, res) => {
             }
           ]
         }
-  
+
         return mailTransport.sendMail(mailOptions).then(() => {
           console.log('New email sent to:', gmailEmail)
           res.status(200).send({

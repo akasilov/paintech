@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 import Home from './components/Home/Home'
 import Gallery from './components/Gallery/Gallery'
 import About from './components/About/About'
