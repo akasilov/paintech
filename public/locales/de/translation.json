@@ -6,7 +6,7 @@
     },
     "slogan": "Pimp your walls!",
     "home_page": {
-      "start_painting": "OFFERTE ANFORDERN",
+      "start_painting": "OFFERTE ANFRAGEN",
       "hero": {
         "slogan": "Pimp your walls!",
         "lang": "De",
@@ -147,7 +147,7 @@
       "success": {
         "body": "Vielen Dank!"
       },
-      "submit": "Angebot anfragen"
+      "submit": "Offerte anfragen"
     },
     "gallery": {
       "genre_1": "Porträt",
