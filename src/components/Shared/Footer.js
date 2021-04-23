@@ -48,11 +48,6 @@ function Footer(props) {
                   </a>
                 </li>
                 <li>
-                  <a href={links.youtube}>
-                    <i className="fa fa-youtube"></i>
-                  </a>
-                </li>
-                <li>
                   <a href={links.telegram}>
                     <i className="fa fa-telegram"></i>
                   </a>
